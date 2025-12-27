@@ -69,10 +69,10 @@ const Contact = () => {
                   Not sure what your crawlspace needs?
                 </h2>
                 <p className="text-lg text-gray-700 mb-4">
-                  We offer free crawlspace inspections and straightforward recommendations based on your home - not sales pressure.
+                  We offer <span className="text-orange-600 font-semibold">free crawlspace inspections</span> and straightforward recommendations based on your home - not sales pressure.
                 </p>
                 <p className="text-lg text-gray-700">
-                  Whether you're dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, we're happy to take a look.
+                  Whether you're dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, <span className="text-orange-600 font-semibold">we're happy to take a look</span>.
                 </p>
               </div>
 

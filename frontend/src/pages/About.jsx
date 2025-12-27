@@ -49,7 +49,7 @@ const About = () => {
               Meet the Team
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              JHS Crawlspace Specialist is a local, family-owned business operated by Nathan and Kristen Johnson. We take pride in serving our community and treating every home like it\'s our own.
+              JHS Crawlspace Specialist is a <span className="text-orange-600 font-semibold">local, family-owned business</span> operated by Nathan and Kristen Johnson. We take pride in serving our community and treating every home like it\'s our own.
             </p>
             <p className="text-lg text-gray-700">
               Our reputation is built on showing up, doing the job right, and standing behind our work.

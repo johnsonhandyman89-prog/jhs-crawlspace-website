@@ -37,7 +37,7 @@ const Services = () => {
     },
     {
       title: 'Free Crawlspace Inspections',
-      description: 'We provide honest evaluations with clear explanations, photos when needed, and no pressure. Whether you're a homeowner, buyer, seller, or realtor - we're happy to take a look.',
+      description: 'We provide honest evaluations with clear explanations, photos when needed, and no pressure. Whether you\'re a homeowner, buyer, seller, or realtor - we\'re happy to take a look.',
       details: ''
     }
   ];

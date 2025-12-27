@@ -38,10 +38,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-white">JHS</span>
-              <span className="text-orange-600"> Crawlspace</span>
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png" 
+                alt="JHS Crawlspace Specialist" 
+                className="h-16"
+              />
+            </div>
             <p className="text-gray-400 mb-4">
               Honest crawlspace solutions for Upstate South Carolina homeowners.
             </p>

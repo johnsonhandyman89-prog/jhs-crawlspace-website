@@ -116,6 +116,15 @@ const Home = () => {
       {/* Trust Factors */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
+          {/* Feature Image */}
+          <div className="mb-12">
+            <img 
+              src="https://lh3.googleusercontent.com/sitesv/AAzXCkewI-UGKEaVcndBkRZcS2LmRIAknW9vgjfKGVata998KJmXCrbJ2t53YAMh080_eBJJ_BxBpIT3cD2kz0T9Mibp3yxuYecMaFjq2XDfFb63g005WJ_F0GMz_DHaduwRRmkV6nsjbmu4A6qyKCt742YtfD8hJ9lNftXQ9zr5xEZb1lmrT_o7AX5roJ5eQts2NzSxBN9YetkWQnkf_rHoB-i6hBhhwur1fgTl=w1280"
+              alt="Crawlspace Work"
+              className="rounded-lg shadow-xl w-full max-w-4xl mx-auto mb-12"
+            />
+          </div>
+
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
             Why Homeowners Choose JHS Crawlspace Specialist
           </h2>

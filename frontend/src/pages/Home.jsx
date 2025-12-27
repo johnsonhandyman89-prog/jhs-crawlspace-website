@@ -119,8 +119,8 @@ const Home = () => {
           {/* Feature Image */}
           <div className="mb-12">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkewI-UGKEaVcndBkRZcS2LmRIAknW9vgjfKGVata998KJmXCrbJ2t53YAMh080_eBJJ_BxBpIT3cD2kz0T9Mibp3yxuYecMaFjq2XDfFb63g005WJ_F0GMz_DHaduwRRmkV6nsjbmu4A6qyKCt742YtfD8hJ9lNftXQ9zr5xEZb1lmrT_o7AX5roJ5eQts2NzSxBN9YetkWQnkf_rHoB-i6hBhhwur1fgTl=w1280"
-              alt="Crawlspace Work"
+              src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/3m5wultu_43E57321-1818-4248-A749-8812FD3EC5CE.png"
+              alt="Crawlspace Before and After - JHS Crawlspace Specialist"
               className="rounded-lg shadow-xl w-full max-w-4xl mx-auto mb-12"
             />
           </div>

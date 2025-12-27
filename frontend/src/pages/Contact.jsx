@@ -134,7 +134,18 @@ const Contact = () => {
                   <CardTitle className="text-2xl text-gray-900">Request Your Free Quote</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form 
+                    onSubmit={handleSubmit} 
+                    className="space-y-4"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div style={{ display: 'none' }}>
+                      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Name *

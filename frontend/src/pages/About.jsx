@@ -57,10 +57,12 @@ const About = () => {
           </div>
 
           {/* Image placeholder */}
-          <div className="mb-12 bg-gray-100 rounded-lg p-12 text-center">
-            <p className="text-gray-500 italic">
-              [Team Photo - Nathan and Kristen Johnson]
-            </p>
+          <div className="mb-12">
+            <img 
+              src="https://lh3.googleusercontent.com/sitesv/AAzXCkdymY-HUeS_E8Acf5iSucE6BW342JdphEkYD9aaGok4jOtlParBjhMlvjUS0n--J857T11megCMwkKGcxfunj4zdIsdZH0SxtzatGInqWjWnvsQRSLMOswvsb-z4iWMgITpyDT6FhuSoji3C361yre5lMvVbXXzpDDMeGHWVTWwKo9fIZ5NJDmOuQ31G_53Ad1AXHBt11NNKGCOO1DO-XBphCKgGy1iTw=w1280"
+              alt="Nathan and Kristen Johnson - JHS Crawlspace Specialist Team" 
+              className="rounded-lg shadow-lg w-full max-w-2xl mx-auto"
+            />
           </div>
 
           <div className="bg-gray-50 rounded-lg p-8">

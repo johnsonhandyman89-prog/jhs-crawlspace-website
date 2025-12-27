@@ -6,28 +6,28 @@ import { Card, CardContent } from '../components/ui/card';
 const Testimonials = () => {
   const reviews = [
     {
+      text: "NAthan has exemplary customer service and quality of work.",
+      author: "Sharon Carroll",
+      rating: 5
+    },
+    {
+      text: "Fair pricing, quality service, and great people to deal with.",
+      author: "Corrine Mays",
+      rating: 5
+    },
+    {
+      text: "Great experience from start to finish our crawlspace looks brand new!",
+      author: "Felicia Parrish",
+      rating: 5
+    },
+    {
       text: "Professional service and honest pricing. Nathan explained everything clearly and didn't try to upsell unnecessary work.",
-      author: "Local Homeowner",
+      author: "Google Reviewer",
       rating: 5
     },
     {
       text: "Best crawlspace specialist in the Upstate! Quick response, thorough inspection, and quality work.",
-      author: "Spartanburg Customer",
-      rating: 5
-    },
-    {
-      text: "Nathan was professional, knowledgeable, and provided excellent service. Highly recommend JHS Crawlspace Specialist!",
-      author: "Greenville Homeowner",
-      rating: 5
-    },
-    {
-      text: "Great experience from start to finish. Free inspection, fair pricing, and quality workmanship.",
-      author: "Greer Customer",
-      rating: 5
-    },
-    {
-      text: "Honest, reliable, and does great work. Finally found a crawlspace specialist I can trust!",
-      author: "Boiling Springs Homeowner",
+      author: "Google Reviewer",
       rating: 5
     }
   ];

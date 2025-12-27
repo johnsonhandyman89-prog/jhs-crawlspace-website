@@ -143,8 +143,8 @@ const Home = () => {
               );
             })}
           </div>
-          <p className="text-center text-lg text-gray-700 mt-12 font-medium">
-            Solutions that make sense for your home
+          <p className="text-lg text-gray-700 text-center mt-12 font-medium">
+            Solutions that make sense <span className="text-orange-600 font-semibold">for your home</span>
           </p>
         </div>
       </section>

@@ -32,7 +32,7 @@ const Contact = () => {
 
   const expectations = [
     'Free inspection or quote',
-    'Clear explanation of what's needed',
+    'Clear explanation of what is needed',
     'No pressure and no obligation',
     'Honest recommendations'
   ];

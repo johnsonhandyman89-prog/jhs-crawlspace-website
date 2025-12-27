@@ -1,10 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle, Shield, Award, Users } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../components/ui/dialog';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
+import { useToast } from '../hooks/use-toast';
 
 const Home = () => {
+  const { toast } = useToast();
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    address: '',
+    message: ''
+  });
+
+  const handleServiceClick = (serviceTitle) => {
+    setSelectedService(serviceTitle);
+    setFormData(prev => ({
+      ...prev,
+      message: `I'm interested in: ${serviceTitle}`
+    }));
+    setIsQuoteModalOpen(true);
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitData = new FormData(form);
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(submitData).toString(),
+      });
+
+      toast({
+        title: "Quote Request Sent!",
+        description: "We will contact you within 24 hours.",
+      });
+      setFormData({ name: '', phone: '', email: '', address: '', message: '' });
+      setIsQuoteModalOpen(false);
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your request. Please call us at (864) 804-9384.",
+        variant: "destructive",
+      });
+    }
+  };
+
   const services = [
     {
       title: 'Crawlspace Vapor Barriers',
@@ -90,7 +146,7 @@ const Home = () => {
               <Card
                 key={index}
                 className="border-gray-200 hover:border-orange-500 transition-all duration-300 hover:shadow-lg cursor-pointer"
-                onClick={() => window.location.href = 'tel:8648049384'}
+                onClick={() => handleServiceClick(service.title)}
               >
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -187,6 +243,99 @@ const Home = () => {
           </Button>
         </div>
       </section>
+
+      {/* Quote Request Modal */}
+      <Dialog open={isQuoteModalOpen} onOpenChange={setIsQuoteModalOpen}>
+        <DialogContent className="sm:max-w-md bg-white">
+          <DialogHeader>
+            <DialogTitle className="text-2xl text-gray-900">Request Your Free Quote</DialogTitle>
+            <DialogDescription className="text-gray-600">
+              {selectedService ? `Interested in: ${selectedService}` : 'Fill out the form below and we will contact you within 24 hours.'}
+            </DialogDescription>
+          </DialogHeader>
+          <form
+            action="/"
+            className="space-y-4"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div style={{ display: 'none' }}>
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Name *
+              </label>
+              <Input
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="border-gray-300"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Phone *
+              </label>
+              <Input
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="border-gray-300"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Email *
+              </label>
+              <Input
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="border-gray-300"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Property Address
+              </label>
+              <Input
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+                className="border-gray-300"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Tell us about your crawlspace concerns
+              </label>
+              <Textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={3}
+                className="border-gray-300"
+              />
+            </div>
+            <Button
+              type="submit"
+              className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-6 transition-all duration-300"
+            >
+              Submit Request
+            </Button>
+          </form>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

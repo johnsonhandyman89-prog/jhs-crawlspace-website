@@ -16,7 +16,16 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = async (e) => {
+  // Netlify Forms submission
+const form = e.target;
+const formData = new FormData(form);
+
+try {
+  await fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  });
     e.preventDefault();
     
     // Netlify Forms submission

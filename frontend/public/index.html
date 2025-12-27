@@ -21,8 +21,14 @@
         <title>Emergent | Fullstack App</title>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
-        These two scripts have been added for the Visual Edits, please do not edit or remove them
-        -->
+        <form name="contact" method="POST" data-netlify="true" hidden>
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <input type="text" name="address" />
+  <textarea name="message"></textarea>
+</form>
         <script>
             // Only load visual edit scripts when inside an iframe
             if (window.self !== window.top) {

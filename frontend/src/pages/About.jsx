@@ -59,7 +59,7 @@ const About = () => {
           {/* Image placeholder */}
           <div className="mb-12">
             <img 
-              src="https://lh3.googleusercontent.com/sitesv/AAzXCkdymY-HUeS_E8Acf5iSucE6BW342JdphEkYD9aaGok4jOtlParBjhMlvjUS0n--J857T11megCMwkKGcxfunj4zdIsdZH0SxtzatGInqWjWnvsQRSLMOswvsb-z4iWMgITpyDT6FhuSoji3C361yre5lMvVbXXzpDDMeGHWVTWwKo9fIZ5NJDmOuQ31G_53Ad1AXHBt11NNKGCOO1DO-XBphCKgGy1iTw=w1280"
+              src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/8y2zdypk_IMG_6755.jpeg"
               alt="Nathan and Kristen Johnson - JHS Crawlspace Specialist Team" 
               className="rounded-lg shadow-lg w-full max-w-2xl mx-auto"
             />

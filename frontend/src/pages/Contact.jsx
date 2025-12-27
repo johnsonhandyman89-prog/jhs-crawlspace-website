@@ -135,7 +135,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <form 
-                    onSubmit={handleSubmit} 
+                    action="/"
                     className="space-y-4"
                     name="contact"
                     method="POST"

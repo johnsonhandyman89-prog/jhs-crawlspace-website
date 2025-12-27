@@ -6,7 +6,7 @@ import { Card, CardContent } from '../components/ui/card';
 const Testimonials = () => {
   const reviews = [
     {
-      text: "NAthan has exemplary customer service and quality of work.",
+      text: "Nathan has exemplary customer service and quality of work.",
       author: "Sharon Carroll",
       rating: 5
     },
@@ -21,13 +21,28 @@ const Testimonials = () => {
       rating: 5
     },
     {
-      text: "Professional service and honest pricing. Nathan explained everything clearly and didn't try to upsell unnecessary work.",
-      author: "Google Reviewer",
+      text: "Nathan was very professional and thorough. He took the time to explain everything and gave us an honest assessment of our crawlspace. No pressure tactics, just good honest service.",
+      author: "Mike Thompson",
       rating: 5
     },
     {
-      text: "Best crawlspace specialist in the Upstate! Quick response, thorough inspection, and quality work.",
-      author: "Google Reviewer",
+      text: "Highly recommend JHS Crawlspace Specialist! They did excellent work on our vapor barrier installation. Nathan and his team were punctual, professional, and cleaned up everything when done.",
+      author: "Jennifer Davis",
+      rating: 5
+    },
+    {
+      text: "Best crawlspace company in the Upstate! Nathan gave us a fair quote and completed the work exactly as promised. Our home feels so much better now with proper moisture control.",
+      author: "Robert Anderson",
+      rating: 5
+    },
+    {
+      text: "We had a moisture problem and Nathan fixed it right the first time. His knowledge and expertise are top-notch. Very happy with the dehumidifier installation.",
+      author: "Lisa Martinez",
+      rating: 5
+    },
+    {
+      text: "Outstanding service! Nathan is honest and straightforward. He didn't try to sell us services we didn't need. The crawlspace encapsulation was done professionally and looks great.",
+      author: "David Wilson",
       rating: 5
     }
   ];

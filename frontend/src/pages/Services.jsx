@@ -8,7 +8,7 @@ const Services = () => {
     {
       title: 'Crawlspace Vapor Barriers',
       description: 'Moisture rises from the ground and gets trapped under your home. A properly installed vapor barrier with 100% ground coverage is the first and most important step in controlling crawlspace moisture.',
-      details: 'We install durable vapor barriers designed to protect your home\'s structure and improve overall air quality.'
+      details: 'We install durable vapor barriers designed to protect your home's structure and improve overall air quality.'
     },
     {
       title: 'Dehumidifiers & Moisture Control',

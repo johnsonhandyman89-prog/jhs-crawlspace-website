@@ -19,8 +19,13 @@ const Testimonials = () => {
       text: "Great experience from start to finish our crawlspace looks brand new!",
       author: "Felicia Parrish",
       rating: 5
-    }
-  ];
+    },
+    {
+      text: "Nathan did an outstanding job from start to finish; prompt estimate, excellent work, great price. Highly recommended.",
+      author: "Phillip Dorroll",
+      raiting: 5
+    },
+    {
 
   return (
     <div className="min-h-screen">

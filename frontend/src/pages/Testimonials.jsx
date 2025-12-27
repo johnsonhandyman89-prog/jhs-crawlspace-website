@@ -83,7 +83,7 @@ const Testimonials = () => {
               onClick={() => window.open('https://www.google.com/search?q=JHS+Crawlspace+Specialist+Reviews', '_blank')}
             >
               <ExternalLink className="mr-2 h-5 w-5" />
-              See All 29 Reviews on Google
+              See All Reviews on Google
             </Button>
           </div>
         </div>

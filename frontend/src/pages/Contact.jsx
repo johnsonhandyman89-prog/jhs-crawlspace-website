@@ -72,7 +72,7 @@ const Contact = () => {
                   We offer <span className="text-orange-600 font-semibold">free crawlspace inspections</span> and straightforward recommendations based on your home - not sales pressure.
                 </p>
                 <p className="text-lg text-gray-700">
-                  Whether you're dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, <span className="text-orange-600 font-semibold">we're happy to take a look</span>.
+                  Whether you are dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, <span className="text-orange-600 font-semibold">we are happy to take a look</span>.
                 </p>
               </div>
 

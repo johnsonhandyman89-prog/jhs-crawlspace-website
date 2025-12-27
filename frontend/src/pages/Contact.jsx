@@ -21,7 +21,7 @@ const Contact = () => {
     // Mock submission for now
     toast({
       title: "Quote Request Sent!",
-      description: "We'll contact you within 24 hours.",
+      description: "We will contact you within 24 hours.",
     });
     setFormData({ name: '', phone: '', email: '', address: '', message: '' });
   };

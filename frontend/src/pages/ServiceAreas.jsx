@@ -46,7 +46,7 @@ const ServiceAreas = () => {
             Service Areas
           </h1>
           <p className="text-xl text-gray-600 mb-4">
-            Proudly Serving the <span className="text-orange-600 font-semibold">Upstate of South Carolina</span>
+            Proudly Serving the <span className="text-tennessee-orange-600 font-semibold">Upstate of South Carolina</span>
           </p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Local, owner-operated crawlspace services for Spartanburg, Greenville, and surrounding communities.
@@ -62,10 +62,10 @@ const ServiceAreas = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {primaryAreas.map((area, index) => (
-              <Card key={index} className="border-gray-200 hover:border-orange-500 transition-all duration-300 hover:shadow-lg">
+              <Card key={index} className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300 hover:shadow-lg">
                 <CardContent className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-4">
-                    <MapPin className="h-8 w-8 text-orange-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-tennessee-orange-100 rounded-full mb-4">
+                    <MapPin className="h-8 w-8 text-tennessee-orange-600" />
                   </div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                     {area.name}
@@ -92,7 +92,7 @@ const ServiceAreas = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {additionalAreas.map((area, index) => (
               <div key={index} className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                <CheckCircle className="h-5 w-5 text-orange-600 flex-shrink-0" />
+                <CheckCircle className="h-5 w-5 text-tennessee-orange-600 flex-shrink-0" />
                 <span className="text-gray-700 font-medium">{area}</span>
               </div>
             ))}
@@ -104,7 +104,7 @@ const ServiceAreas = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Why <span className="text-orange-600">Local</span> Matters
+            Why <span className="text-tennessee-orange-600">Local</span> Matters
           </h2>
           <p className="text-lg text-gray-700 mb-6">
             JHS Crawlspace Specialist is a local, family-owned business. We understand the unique challenges of crawlspaces in the Upstate - from our red clay soil to our humid summers.
@@ -113,7 +113,7 @@ const ServiceAreas = () => {
             When you call us, you're talking directly to the owner. No call centers, no salespeople - just honest advice and quality work from someone who lives and works in your community.
           </p>
           <p className="text-lg text-gray-700">
-            <span className="text-orange-600 font-semibold">We treat every home like it's our own.</span>
+            <span className="text-tennessee-orange-600 font-semibold">We treat every home like it's our own.</span>
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ const ServiceAreas = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-orange-600">
+      <section className="py-20 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready for a Free Crawlspace Inspection?
@@ -141,7 +141,7 @@ const ServiceAreas = () => {
           </p>
           <Button
             size="lg"
-            className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
+            className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
             <Phone className="mr-2 h-5 w-5" />

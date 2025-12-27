@@ -39,8 +39,8 @@ const Header = () => {
                 to={link.path}
                 className={`font-medium transition-colors duration-200 ${
                   isActive(link.path)
-                    ? 'text-orange-600'
-                    : 'text-gray-700 hover:text-orange-600'
+                    ? 'text-tennessee-orange-600'
+                    : 'text-gray-700 hover:text-tennessee-orange-600'
                 }`}
               >
                 {link.label}
@@ -51,7 +51,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button
-              className="bg-orange-600 hover:bg-orange-700 text-white transition-all duration-300"
+              className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white transition-all duration-300"
               onClick={() => window.location.href = 'tel:8648049384'}
             >
               <Phone className="mr-2 h-4 w-4" />
@@ -83,15 +83,15 @@ const Header = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`font-medium py-2 transition-colors duration-200 ${
                     isActive(link.path)
-                      ? 'text-orange-600'
-                      : 'text-gray-700 hover:text-orange-600'
+                      ? 'text-tennessee-orange-600'
+                      : 'text-gray-700 hover:text-tennessee-orange-600'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
               <Button
-                className="bg-orange-600 hover:bg-orange-700 text-white w-full mt-2 transition-all duration-300"
+                className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white w-full mt-2 transition-all duration-300"
                 onClick={() => {
                   window.location.href = 'tel:8648049384';
                   setMobileMenuOpen(false);

@@ -66,7 +66,7 @@ const Services = () => {
             Every crawlspace is different. Some need simple moisture control, while others require more involved solutions.
           </p>
           <p className="text-lg text-gray-700">
-            At JHS Crawlspace Specialist, we <span className="text-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - <span className="text-orange-600 font-semibold">no pressure</span> and <span className="text-orange-600 font-semibold">no unnecessary upsells</span>.
+            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - <span className="text-tennessee-orange-600 font-semibold">no pressure</span> and <span className="text-tennessee-orange-600 font-semibold">no unnecessary upsells</span>.
           </p>
         </div>
       </section>
@@ -76,7 +76,7 @@ const Services = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-gray-200 hover:border-orange-500 transition-all duration-300">
+              <Card key={index} className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300">
                 <CardHeader className="bg-white">
                   <CardTitle className="text-2xl text-gray-900">{service.title}</CardTitle>
                 </CardHeader>
@@ -109,14 +109,14 @@ const Services = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-orange-600">
+      <section className="py-16 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Schedule a Free Inspection
           </h2>
           <Button 
             size="lg" 
-            className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
+            className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
             <Phone className="mr-2 h-5 w-5" />

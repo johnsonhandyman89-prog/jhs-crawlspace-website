@@ -67,7 +67,7 @@ const Testimonials = () => {
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
             {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-8 w-8 fill-orange-500 text-orange-500" />
+              <Star key={star} className="h-8 w-8 fill-tennessee-orange-500 text-tennessee-orange-500" />
             ))}
           </div>
           <p className="text-xl text-gray-600">
@@ -81,11 +81,11 @@ const Testimonials = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {reviews.map((review, index) => (
-              <Card key={index} className="border-gray-200 hover:border-orange-500 transition-all duration-300">
+              <Card key={index} className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex gap-1 mb-4">
                     {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} className="h-5 w-5 fill-orange-500 text-orange-500" />
+                      <Star key={star} className="h-5 w-5 fill-tennessee-orange-500 text-tennessee-orange-500" />
                     ))}
                   </div>
                   <p className="text-gray-700 text-lg mb-4 italic">
@@ -104,7 +104,7 @@ const Testimonials = () => {
             <Button 
               size="lg"
               variant="outline"
-              className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white transition-all duration-300"
+              className="border-tennessee-orange-600 text-tennessee-orange-600 hover:bg-tennessee-orange-600 hover:text-white transition-all duration-300"
               onClick={() => window.open('https://www.google.com/search?q=JHS+Crawlspace+Specialist+Reviews', '_blank')}
             >
               <ExternalLink className="mr-2 h-5 w-5" />
@@ -132,7 +132,7 @@ const Testimonials = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 px-4 bg-orange-600">
+      <section className="py-16 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Ready to Experience Our Service?
@@ -140,7 +140,7 @@ const Testimonials = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
+              className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
               onClick={() => window.location.href = 'tel:8648049384'}
             >
               <Phone className="mr-2 h-5 w-5" />

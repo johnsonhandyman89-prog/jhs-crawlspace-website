@@ -22,13 +22,13 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              <span className="text-orange-600">Honest Work.</span> <span className="text-orange-600">Practical Solutions.</span> <span className="text-orange-600">No Pressure.</span>
+              <span className="text-tennessee-orange-600">Honest Work.</span> <span className="text-tennessee-orange-600">Practical Solutions.</span> <span className="text-tennessee-orange-600">No Pressure.</span>
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              JHS Crawlspace Specialist was started with a simple goal - to give homeowners an <span className="text-orange-600 font-semibold">honest option</span> when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
+              JHS Crawlspace Specialist was started with a simple goal - to give homeowners an <span className="text-tennessee-orange-600 font-semibold">honest option</span> when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
             </p>
             <p className="text-lg text-gray-700">
-              We focus on identifying the real cause of moisture, odors, and related issues, then recommending <span className="text-orange-600 font-semibold">only what actually makes sense</span> for the home. Our inspections are straightforward, <span className="text-orange-600 font-semibold">pressure-free</span>, and based on experience - not sales quotas.
+              We focus on identifying the real cause of moisture, odors, and related issues, then recommending <span className="text-tennessee-orange-600 font-semibold">only what actually makes sense</span> for the home. Our inspections are straightforward, <span className="text-tennessee-orange-600 font-semibold">pressure-free</span>, and based on experience - not sales quotas.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ const About = () => {
               Meet the Team
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              JHS Crawlspace Specialist is a <span className="text-orange-600 font-semibold">local, family-owned business</span> operated by Nathan and Kristen Johnson. We take pride in serving our community and treating every home like our own.
+              JHS Crawlspace Specialist is a <span className="text-tennessee-orange-600 font-semibold">local, family-owned business</span> operated by Nathan and Kristen Johnson. We take pride in serving our community and treating every home like our own.
             </p>
             <p className="text-lg text-gray-700">
               Our reputation is built on showing up, doing the job right, and standing behind our work.
@@ -77,14 +77,14 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-orange-600">
+      <section className="py-16 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Request a Free Inspection
           </h2>
           <Button 
             size="lg" 
-            className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
+            className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
             <Phone className="mr-2 h-5 w-5" />

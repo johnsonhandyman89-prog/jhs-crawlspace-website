@@ -87,10 +87,10 @@ const Contact = () => {
                   Not sure what your crawlspace needs?
                 </h2>
                 <p className="text-lg text-gray-700 mb-4">
-                  We offer <span className="text-orange-600 font-semibold">free crawlspace inspections</span> and straightforward recommendations based on your home - not sales pressure.
+                  We offer <span className="text-tennessee-orange-600 font-semibold">free crawlspace inspections</span> and straightforward recommendations based on your home - not sales pressure.
                 </p>
                 <p className="text-lg text-gray-700">
-                  Whether you are dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, <span className="text-orange-600 font-semibold">we are happy to take a look</span>.
+                  Whether you are dealing with moisture, odors, vapor barrier issues, sump pumps, or just want peace of mind, <span className="text-tennessee-orange-600 font-semibold">we are happy to take a look</span>.
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                   <ul className="space-y-3">
                     {expectations.map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-6 w-6 text-tennessee-orange-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -118,7 +118,7 @@ const Contact = () => {
                   <ul className="space-y-3">
                     {idealFor.map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="h-6 w-6 text-tennessee-orange-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -210,7 +210,7 @@ const Contact = () => {
                     </div>
                     <Button 
                       type="submit"
-                      className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-6 transition-all duration-300"
+                      className="w-full bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white text-lg py-6 transition-all duration-300"
                     >
                       Submit Request
                     </Button>
@@ -220,10 +220,10 @@ const Contact = () => {
 
               {/* Direct Contact Options */}
               <div className="space-y-4">
-                <Card className="border-gray-200 hover:border-orange-500 transition-all duration-300 cursor-pointer" onClick={() => window.location.href = 'tel:8648049384'}>
+                <Card className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300 cursor-pointer" onClick={() => window.location.href = 'tel:8648049384'}>
                   <CardContent className="p-6 flex items-center gap-4">
-                    <div className="bg-orange-100 p-3 rounded-full">
-                      <Phone className="h-6 w-6 text-orange-600" />
+                    <div className="bg-tennessee-orange-100 p-3 rounded-full">
+                      <Phone className="h-6 w-6 text-tennessee-orange-600" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-600">Call us directly</p>
@@ -232,10 +232,10 @@ const Contact = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="border-gray-200 hover:border-orange-500 transition-all duration-300 cursor-pointer" onClick={() => window.location.href = 'mailto:jhscrawlspace@gmail.com'}>
+                <Card className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300 cursor-pointer" onClick={() => window.location.href = 'mailto:jhscrawlspace@gmail.com'}>
                   <CardContent className="p-6 flex items-center gap-4">
-                    <div className="bg-orange-100 p-3 rounded-full">
-                      <Mail className="h-6 w-6 text-orange-600" />
+                    <div className="bg-tennessee-orange-100 p-3 rounded-full">
+                      <Mail className="h-6 w-6 text-tennessee-orange-600" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-600">Email us</p>
@@ -246,8 +246,8 @@ const Contact = () => {
 
                 <Card className="border-gray-200">
                   <CardContent className="p-6 flex items-center gap-4">
-                    <div className="bg-orange-100 p-3 rounded-full">
-                      <MapPin className="h-6 w-6 text-orange-600" />
+                    <div className="bg-tennessee-orange-100 p-3 rounded-full">
+                      <MapPin className="h-6 w-6 text-tennessee-orange-600" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-600">Service areas</p>

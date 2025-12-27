@@ -71,10 +71,10 @@ const Home = () => {
             Crawlspace Problems Don't Fix Themselves
           </h2>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-8">
-            Moisture, open vents, and poor ground coverage can lead to mold, odors, wood rot, and higher energy bills.
+            Moisture, open vents, and poor ground coverage can lead to <span className="text-orange-600 font-semibold">mold</span>, <span className="text-orange-600 font-semibold">odors</span>, <span className="text-orange-600 font-semibold">wood rot</span>, and <span className="text-orange-600 font-semibold">higher energy bills</span>.
           </p>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
+            At JHS Crawlspace Specialist, we <span className="text-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
           </p>
         </div>
       </section>

@@ -50,14 +50,14 @@ const Footer = () => {
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-gray-400">
-                <Phone className="h-4 w-4 text-orange-600" />
-                <a href="tel:8648049384" className="hover:text-orange-600 transition-colors">
+                <Phone className="h-4 w-4 text-tennessee-orange-600" />
+                <a href="tel:8648049384" className="hover:text-tennessee-orange-600 transition-colors">
                   (864) 804-9384
                 </a>
               </div>
               <div className="flex items-center gap-2 text-gray-400">
-                <Mail className="h-4 w-4 text-orange-600" />
-                <a href="mailto:jhscrawlspace@gmail.com" className="hover:text-orange-600 transition-colors">
+                <Mail className="h-4 w-4 text-tennessee-orange-600" />
+                <a href="mailto:jhscrawlspace@gmail.com" className="hover:text-tennessee-orange-600 transition-colors">
                   jhscrawlspace@gmail.com
                 </a>
               </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-orange-600 transition-colors"
+                    className="text-gray-400 hover:text-tennessee-orange-600 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
           {/* Service Areas */}
           <div>
             <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <MapPin className="h-5 w-5 text-orange-600" />
+              <MapPin className="h-5 w-5 text-tennessee-orange-600" />
               Service Areas
             </h4>
             <ul className="space-y-2">

@@ -13,6 +13,18 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			'tennessee-orange': {
+  				50: '#FFF7ED',
+  				100: '#FFEDD5',
+  				200: '#FED7AA',
+  				300: '#FDBA74',
+  				400: '#FB923C',
+  				500: '#FF8200',
+  				600: '#FF8200',
+  				700: '#E67400',
+  				800: '#C45D00',
+  				900: '#A34900',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

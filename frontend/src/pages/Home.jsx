@@ -107,11 +107,11 @@ const Home = () => {
             Upstate South Carolina
           </p>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            <span className="text-orange-600 font-semibold">Honest inspections.</span> <span className="text-orange-600 font-semibold">No pressure.</span> Solutions that actually make sense.
+            <span className="text-tennessee-orange-600 font-semibold">Honest inspections.</span> <span className="text-tennessee-orange-600 font-semibold">No pressure.</span> Solutions that actually make sense.
           </p>
           <Button 
             size="lg" 
-            className="bg-orange-600 hover:bg-orange-700 text-white text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
             <Phone className="mr-2 h-5 w-5" />
@@ -127,10 +127,10 @@ const Home = () => {
             Crawlspace Problems Don't Fix Themselves
           </h2>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-8">
-            Moisture, open vents, and poor ground coverage can lead to <span className="text-orange-600 font-semibold">mold</span>, <span className="text-orange-600 font-semibold">odors</span>, <span className="text-orange-600 font-semibold">wood rot</span>, and <span className="text-orange-600 font-semibold">higher energy bills</span>.
+            Moisture, open vents, and poor ground coverage can lead to <span className="text-tennessee-orange-600 font-semibold">mold</span>, <span className="text-tennessee-orange-600 font-semibold">odors</span>, <span className="text-tennessee-orange-600 font-semibold">wood rot</span>, and <span className="text-tennessee-orange-600 font-semibold">higher energy bills</span>.
           </p>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-            At JHS Crawlspace Specialist, we <span className="text-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
+            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
           </p>
         </div>
       </section>
@@ -145,7 +145,7 @@ const Home = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="border-gray-200 hover:border-orange-500 transition-all duration-300 hover:shadow-lg cursor-pointer"
+                className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300 hover:shadow-lg cursor-pointer"
                 onClick={() => handleServiceClick(service.title)}
               >
                 <CardContent className="p-6">
@@ -155,7 +155,7 @@ const Home = () => {
                   <p className="text-gray-600">
                     {service.description}
                   </p>
-                  <p className="text-orange-600 text-sm mt-3 font-medium">
+                  <p className="text-tennessee-orange-600 text-sm mt-3 font-medium">
                     Click to request a free quote →
                   </p>
                 </CardContent>
@@ -167,7 +167,7 @@ const Home = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white transition-all duration-300"
+                className="border-tennessee-orange-600 text-tennessee-orange-600 hover:bg-tennessee-orange-600 hover:text-white transition-all duration-300"
               >
                 View All Services
               </Button>
@@ -196,8 +196,8 @@ const Home = () => {
               const Icon = factor.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-4">
-                    <Icon className="h-8 w-8 text-orange-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-tennessee-orange-100 rounded-full mb-4">
+                    <Icon className="h-8 w-8 text-tennessee-orange-600" />
                   </div>
                   <p className="text-lg text-gray-700 font-medium">
                     {factor.text}
@@ -207,7 +207,7 @@ const Home = () => {
             })}
           </div>
           <p className="text-lg text-gray-700 text-center mt-12 font-medium">
-            Solutions that make sense <span className="text-orange-600 font-semibold">for your home</span>
+            Solutions that make sense <span className="text-tennessee-orange-600 font-semibold">for your home</span>
           </p>
         </div>
       </section>
@@ -216,16 +216,16 @@ const Home = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Proudly Serving the <span className="text-orange-600">Upstate of South Carolina</span>
+            Proudly Serving the <span className="text-tennessee-orange-600">Upstate of South Carolina</span>
           </h2>
           <p className="text-lg text-gray-700">
-            <span className="text-orange-600 font-semibold">Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford</span>, and surrounding areas.
+            <span className="text-tennessee-orange-600 font-semibold">Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford</span>, and surrounding areas.
           </p>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-orange-600">
+      <section className="py-20 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Crawlspace work done right. Built to last a lifetime.
@@ -235,7 +235,7 @@ const Home = () => {
           </p>
           <Button 
             size="lg" 
-            className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
+            className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
             <Phone className="mr-2 h-5 w-5" />
@@ -329,7 +329,7 @@ const Home = () => {
             </div>
             <Button
               type="submit"
-              className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-6 transition-all duration-300"
+              className="w-full bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white text-lg py-6 transition-all duration-300"
             >
               Submit Request
             </Button>

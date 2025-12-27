@@ -16,14 +16,32 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Mock submission for now
-    toast({
-      title: "Quote Request Sent!",
-      description: "We will contact you within 24 hours.",
-    });
-    setFormData({ name: '', phone: '', email: '', address: '', message: '' });
+    
+    // Netlify Forms submission
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      });
+      
+      toast({
+        title: "Quote Request Sent!",
+        description: "We will contact you within 24 hours.",
+      });
+      setFormData({ name: '', phone: '', email: '', address: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your request. Please call us at (864) 804-9384.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e) => {

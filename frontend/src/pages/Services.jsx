@@ -13,7 +13,7 @@ const Services = () => {
     {
       title: 'Dehumidifiers & Moisture Control',
       description: 'When humidity stays high, mold and odors can develop. Crawlspace dehumidifiers help maintain proper moisture levels and protect wood framing, insulation, and flooring above.',
-      details: 'We size and place systems correctly — not oversized, not undersized.'
+      details: 'We size and place systems correctly - not oversized, not undersized.'
     },
     {
       title: 'Mold & Odor Control',

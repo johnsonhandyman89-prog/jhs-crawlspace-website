@@ -37,7 +37,7 @@ const About = () => {
               Our Approach
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. We take the time to explain what\'s happening, why it\'s happening, and what options make sense - without pushing unnecessary work.
+              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. We take the time to explain what's happening, why it's happening, and what options make sense - without pushing unnecessary work.
             </p>
             <p className="text-lg text-gray-700">
               Homeowners, buyers, sellers, and realtors trust us because we keep things clear, honest, and practical.

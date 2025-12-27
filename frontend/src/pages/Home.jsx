@@ -51,7 +51,7 @@ const Home = () => {
             Upstate South Carolina
           </p>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Honest inspections. No pressure. Solutions that actually make sense.
+            <span className="text-orange-600 font-semibold">Honest inspections.</span> <span className="text-orange-600 font-semibold">No pressure.</span> Solutions that actually make sense.
           </p>
           <Button 
             size="lg" 

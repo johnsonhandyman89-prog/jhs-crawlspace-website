@@ -153,10 +153,10 @@ const Home = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Proudly Serving the Upstate of South Carolina
+            Proudly Serving the <span className="text-orange-600">Upstate of South Carolina</span>
           </h2>
           <p className="text-lg text-gray-700">
-            Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford, and surrounding areas.
+            <span className="text-orange-600 font-semibold">Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford</span>, and surrounding areas.
           </p>
         </div>
       </section>

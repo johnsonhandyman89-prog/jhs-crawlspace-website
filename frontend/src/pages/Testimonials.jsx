@@ -74,45 +74,6 @@ const Testimonials = () => {
             ))}
           </div>
 
-          {/* Actual Google Review Screenshots */}
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Real Google Reviews
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCke-yNU_X834279UIMFSzHSb_wu_E3h8Wu8eJnDoF0exL38QFfKpMshDhi2Y2SQxhrhFJhfeVsr_BntS78ug5-vaAYDv5q2g3htaVaqabaipEma9i_PI2h-PRwokNh8XvittEIUimAQ9OH0XBRfjXJUIR4GuxssZiPnJ5SIxua6PZj0AX0t7vMKWYHoZFOq2BQctCz7u3s5lIJREzwPTDSKFXbH_iicK8QGnmvU=w1280"
-                alt="Customer Review 1"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCkfwQNpMH3o5rpMPLDBjYXhNyN4j20HNwfkO8OdzI959k68kqTWEweQWYoDiboAjeEk5gM3Lk9VXh6-bTam4KBjj6QN374z3544uQEWsjmkp9aWdq-cEDI9xnNThgNCoMgKqnfmcvL9aAPtE4RLlaO7O8c6OyOlFqort0zWVg-LAnHa4DcnbGSJIdk-EPvNuTG77_pq1xBSOlsgWcfiCKae9HIvrS7lwbc8IKxk=w1280"
-                alt="Customer Review 2"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCkf2_7LWnDjPZ_FDRldHgNo4s4kzI_S-fLKAB9Q5oLDlMl33mkqhjAAMNsJ9sLtgTteEFdTbdd1NfW3ziC81S_VNZaQAX1mcRqO6KUOIfnn3Wy4G0O3qQeIU_boI74uNNcGEa1r-2J2VK6E1Zd1-OhasEB5lwiqpCRPoQQ89NIP8h6dSzKAJyjcCEtryysEGsRnZJSaXDhpfCj2YzHN7a-RAtWTX2OelzK6vZz0=w1280"
-                alt="Customer Review 3"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCkfO4uxs7kN5YAIGNOZ6PgVvJJbKKlCx4gUTWFh3MEntkVVCTUF_z3cJrW5-25hptHqsb0BtO_Qak8i36V0laCN0VCMHRsLh5yW7oMazGz48ezhfSHvineD1VJFuy7_oz-y7zjg10xHi_uZrWB3ZW8MUNLEfbNJlxcugA4oUwkv59g3CgChmXOydi8XtidKa2iwhGL6o3NEeqyt0uUewZr6ixbZQwGj6_6ASr5A=w1280"
-                alt="Customer Review 4"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCketTyzCSP8_esH2L71u9KlD6FtGXXmYUlOjPYTPEDp93IihmDeMLhRXqnBSjKMZSBUk-E0uHv4OlXy4ja546SEeMmQYAh3wo_H02zhoo9c1-s489nlxJ7aJVLMkCllOiL6_D0PDYDKjc6WWIo9nwg9tmuzg1iS_OddlXMq5QmrWAFAm-AtXFGw5RhXUzbe7r0Uwgg3drTKaSIcCYyDpfV-_nw_YerW8xKRFuqs=w1280"
-                alt="Customer Review 5"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-              <img 
-                src="https://lh3.googleusercontent.com/sitesv/AAzXCkfCFXnQBPRqWszoUYeJs7-qUI9Zh2yTYGj1UqPq9p-Os0YxQ5-tvYY9UoRQ5sH0LgYECxJUUhJUedeiv0THeRp78-opOtNicRAGcwXpMsG75U546czllZYJwZUdDPGj0S3_Y4R9_69LUvq9qfpHOvFImsSIU5Bw_75XM79B00h_sHx9J0fnB5uwBiT5-Cs1qMgWKg1E1PFClkqCZYz2trB9n3o1w8EMvKzoof4=w1280"
-                alt="Customer Review 6"
-                className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
-              />
-            </div>
-          </div>
-
           {/* Google Reviews CTA */}
           <div className="text-center mb-12">
             <Button 
@@ -122,7 +83,7 @@ const Testimonials = () => {
               onClick={() => window.open('https://www.google.com/search?q=JHS+Crawlspace+Specialist+Reviews', '_blank')}
             >
               <ExternalLink className="mr-2 h-5 w-5" />
-              See More Reviews on Google
+              See All 29 Reviews on Google
             </Button>
           </div>
         </div>

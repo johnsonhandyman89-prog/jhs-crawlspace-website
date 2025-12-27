@@ -6,21 +6,56 @@ import { Card, CardContent } from '../components/ui/card';
 const Testimonials = () => {
   const reviews = [
     {
-      text: "Nathan has exemplary customer service and quality of work.",
+      text: "Nathan did an outstanding job from start to finish; prompt estimate, excellent work, great price. Highly recommended.",
+      author: "Philip Dorroll",
+      rating: 5
+    },
+    {
+      text: "The very best experience with this company. Nathan has exemplary customer service and quality of work. Extremely satisfied!!! He deserves 10 stars!!",
       author: "Sharon Carroll",
+      rating: 5
+    },
+    {
+      text: "JHS Crawlspace Specialist did an amazing job on our home! Nathan and his team were professional, on time, and explained everything about our crawlspace encapsulation process. They installed a high quality vapor barrier and sealed the vents.",
+      author: "Cyndal Hayes",
+      rating: 5
+    },
+    {
+      text: "We had moisture and odor issues under our house and called JHS Crawlspace Specialist. They explained everything clearly and did a full encapsulation with a clean vapor barrier. Great experience from start to finish, our crawlspace looks brand new!",
+      author: "Felicia Parrish",
+      rating: 5
+    },
+    {
+      text: "Nathan did a great job for me! He was able to evaluate the scope of work needed, make recommendations, and complete the job in a timely manner. I would definitely recommend him!",
+      author: "Keith Felker",
+      rating: 5
+    },
+    {
+      text: "Super reliable and easy to work with. They fixed my crawlspace the right way and I couldn't be happier with the outcome.",
+      author: "Nate Pierce",
+      rating: 5
+    },
+    {
+      text: "Very good company to deal with. They are very reliable and honest also do great work. Highly recommend them.",
+      author: "Joseph Enos Jr",
+      rating: 5
+    },
+    {
+      text: "Real problem solvers! Professional, efficient, and reasonably priced. Highly recommend!",
+      author: "Herb Eplee",
+      rating: 5
+    },
+    {
+      text: "Professional, timely, and very reasonably priced.",
+      author: "Jeremy Bridges",
       rating: 5
     },
     {
       text: "Fair pricing, quality service, and great people to deal with.",
       author: "Corrine Mays",
       rating: 5
-    },
-    {
-      text: "Great experience from start to finish our crawlspace looks brand new!",
-      author: "Felicia Parrish",
-      rating: 5
-    },
-    {
+    }
+  ];
 
   return (
     <div className="min-h-screen">

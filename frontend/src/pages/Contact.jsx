@@ -16,29 +16,20 @@ const Contact = () => {
     message: ''
   });
 
-  // Netlify Forms submission
-const form = e.target;
-const formData = new FormData(form);
-
-try {
-  await fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(formData).toString(),
-  });
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Netlify Forms submission
     const form = e.target;
-    const formData = new FormData(form);
-    
+    const submitData = new FormData(form);
+
     try {
       await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
+        body: new URLSearchParams(submitData).toString(),
       });
-      
+
       toast({
         title: "Quote Request Sent!",
         description: "We will contact you within 24 hours.",

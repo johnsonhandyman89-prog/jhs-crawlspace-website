@@ -46,7 +46,7 @@ const Testimonials = () => {
             ))}
           </div>
           <p className="text-xl text-gray-600">
-            5.0 Average Rating - Real reviews from local Upstate homeowners
+            5.0 Average Rating - 29 Real Google Reviews from local Upstate homeowners
           </p>
         </div>
       </section>

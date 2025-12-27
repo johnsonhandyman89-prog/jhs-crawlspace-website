@@ -25,10 +25,10 @@ const About = () => {
               Honest Work. Practical Solutions. No Pressure.
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              JHS Crawlspace Specialist was started with a simple goal — to give homeowners an honest option when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
+              JHS Crawlspace Specialist was started with a simple goal - to give homeowners an honest option when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
             </p>
             <p className="text-lg text-gray-700">
-              We focus on identifying the real cause of moisture, odors, and related issues, then recommending only what actually makes sense for the home. Our inspections are straightforward, pressure-free, and based on experience — not sales quotas.
+              We focus on identifying the real cause of moisture, odors, and related issues, then recommending only what actually makes sense for the home. Our inspections are straightforward, pressure-free, and based on experience - not sales quotas.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const About = () => {
               Our Approach
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. We take the time to explain what's happening, why it matters, and what options make sense — without pushing unnecessary work.
+              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. We take the time to explain what's happening, why it matters, and what options make sense - without pushing unnecessary work.
             </p>
             <p className="text-lg text-gray-700">
               Homeowners, buyers, sellers, and realtors trust us because we keep things clear, honest, and practical.

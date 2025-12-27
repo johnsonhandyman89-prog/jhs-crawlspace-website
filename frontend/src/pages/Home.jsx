@@ -12,7 +12,7 @@ const Home = () => {
     },
     {
       title: 'Dehumidifiers & Moisture Control',
-      description: 'Proper sizing and placement — no guesswork.'
+      description: 'Proper sizing and placement - no guesswork.'
     },
     {
       title: 'Mold & Odor Control',
@@ -74,7 +74,7 @@ const Home = () => {
             Moisture, open vents, and poor ground coverage can lead to mold, odors, wood rot, and higher energy bills.
           </p>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs — not a one-size-fits-all encapsulation.
+            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
           </p>
         </div>
       </section>

@@ -46,7 +46,7 @@ const Testimonials = () => {
             ))}
           </div>
           <p className="text-xl text-gray-600">
-            5.0 Average Rating — Real reviews from local Upstate homeowners
+            5.0 Average Rating - Real reviews from local Upstate homeowners
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                     "{review.text}"
                   </p>
                   <p className="text-gray-600 font-medium">
-                    — {review.author}
+                    - {review.author}
                   </p>
                 </CardContent>
               </Card>

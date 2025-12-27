@@ -33,11 +33,11 @@ const Services = () => {
     {
       title: 'Sump Pumps & Battery Backup Systems',
       description: 'Sump pumps are designed to remove water from the crawlspace before it can cause damage. When groundwater or heavy rain enters the crawlspace, a properly installed sump pump helps keep the area dry and protected.',
-      details: 'Battery backup systems are critical during power outages. If the power goes out during a storm, a standard sump pump becomes useless without a backup. A battery backup system allows the pump to continue operating when you need it most. We install and service sump pumps and battery backup systems to provide added protection and peace of mind — especially during severe weather and extended power outages.'
+      details: 'Battery backup systems are critical during power outages. If the power goes out during a storm, a standard sump pump becomes useless without a backup. A battery backup system allows the pump to continue operating when you need it most. We install and service sump pumps and battery backup systems to provide added protection and peace of mind - especially during severe weather and extended power outages.'
     },
     {
       title: 'Free Crawlspace Inspections',
-      description: 'We provide honest evaluations with clear explanations, photos when needed, and no pressure. Whether you're a homeowner, buyer, seller, or realtor — we're happy to take a look.',
+      description: 'We provide honest evaluations with clear explanations, photos when needed, and no pressure. Whether you're a homeowner, buyer, seller, or realtor - we're happy to take a look.',
       details: ''
     }
   ];
@@ -66,7 +66,7 @@ const Services = () => {
             Every crawlspace is different. Some need simple moisture control, while others require more involved solutions.
           </p>
           <p className="text-lg text-gray-700">
-            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs — no pressure and no unnecessary upsells.
+            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs - no pressure and no unnecessary upsells.
           </p>
         </div>
       </section>

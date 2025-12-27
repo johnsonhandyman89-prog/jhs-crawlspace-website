@@ -66,7 +66,7 @@ const Services = () => {
             Every crawlspace is different. Some need simple moisture control, while others require more involved solutions.
           </p>
           <p className="text-lg text-gray-700">
-            At JHS Crawlspace Specialist, we inspect first and recommend only what your crawlspace actually needs - no pressure and no unnecessary upsells.
+            At JHS Crawlspace Specialist, we <span className="text-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - <span className="text-orange-600 font-semibold">no pressure</span> and <span className="text-orange-600 font-semibold">no unnecessary upsells</span>.
           </p>
         </div>
       </section>

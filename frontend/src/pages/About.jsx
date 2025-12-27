@@ -22,13 +22,13 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Honest Work. Practical Solutions. No Pressure.
+              <span className="text-orange-600">Honest Work.</span> <span className="text-orange-600">Practical Solutions.</span> <span className="text-orange-600">No Pressure.</span>
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              JHS Crawlspace Specialist was started with a simple goal - to give homeowners an honest option when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
+              JHS Crawlspace Specialist was started with a simple goal - to give homeowners an <span className="text-orange-600 font-semibold">honest option</span> when it comes to crawlspace moisture problems. Not every crawlspace needs full encapsulation, and not every issue requires an expensive solution.
             </p>
             <p className="text-lg text-gray-700">
-              We focus on identifying the real cause of moisture, odors, and related issues, then recommending only what actually makes sense for the home. Our inspections are straightforward, pressure-free, and based on experience - not sales quotas.
+              We focus on identifying the real cause of moisture, odors, and related issues, then recommending <span className="text-orange-600 font-semibold">only what actually makes sense</span> for the home. Our inspections are straightforward, <span className="text-orange-600 font-semibold">pressure-free</span>, and based on experience - not sales quotas.
             </p>
           </div>
 

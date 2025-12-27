@@ -87,13 +87,20 @@ const Home = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="border-gray-200 hover:border-orange-500 transition-all duration-300 hover:shadow-lg">
+              <Card
+                key={index}
+                className="border-gray-200 hover:border-orange-500 transition-all duration-300 hover:shadow-lg cursor-pointer"
+                onClick={() => window.location.href = 'tel:8648049384'}
+              >
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {service.title}
                   </h3>
                   <p className="text-gray-600">
                     {service.description}
+                  </p>
+                  <p className="text-orange-600 text-sm mt-3 font-medium">
+                    Click to request a free quote →
                   </p>
                 </CardContent>
               </Card>

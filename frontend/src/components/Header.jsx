@@ -13,6 +13,7 @@ const Header = () => {
     { path: '/service-areas', label: 'Service Areas' },
     { path: '/about', label: 'About' },
     { path: '/testimonials', label: 'Testimonials' },
+    { path: '/why-trust-us', label: 'Why Trust Us' },
     { path: '/contact', label: 'Request Quote' }
   ];
 

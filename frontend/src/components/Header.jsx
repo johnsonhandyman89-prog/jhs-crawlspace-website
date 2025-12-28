@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -11,10 +11,10 @@ const Header = () => {
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
     { path: '/service-areas', label: 'Service Areas' },
+    { path: '/why-trust-us', label: 'Why Homeowners Trust JHS' },
     { path: '/about', label: 'About' },
     { path: '/testimonials', label: 'Testimonials' },
-    { path: '/why-trust-us', label: 'Why Trust Us' },
-    { path: '/contact', label: 'Request Quote' }
+    { path: '/contact', label: 'Contact / Free Inspection' }
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -60,17 +60,25 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6 text-gray-900" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-900" />
-            )}
-          </button>
+          {/* Mobile Call Now Button and Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <Button
+              size="sm"
+              className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white transition-all duration-300"
+              onClick={() => window.location.href = 'tel:8648049384'}
+            >
+              <Phone className="mr-1 h-4 w-4" />
+              Call Now
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="border-gray-300 text-gray-700 hover:bg-gray-100"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? 'Close' : 'Menu'}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -91,16 +99,6 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button
-                className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white w-full mt-2 transition-all duration-300"
-                onClick={() => {
-                  window.location.href = 'tel:8648049384';
-                  setMobileMenuOpen(false);
-                }}
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                (864) 804-9384
-              </Button>
             </nav>
           </div>
         )}

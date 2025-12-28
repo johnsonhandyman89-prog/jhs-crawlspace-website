@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import ServiceAreas from "./pages/ServiceAreas";
+import WhyTrustUs from "./pages/WhyTrustUs";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/service-areas" element={<ServiceAreas />} />
               <Route path="/about" element={<About />} />
               <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/why-trust-us" element={<WhyTrustUs />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

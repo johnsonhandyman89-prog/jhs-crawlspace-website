@@ -71,7 +71,7 @@ const Testimonials = () => {
             ))}
           </div>
           <p className="text-xl text-gray-600">
-            5.0 Average Rating - Real Google Reviews from local Upstate homeowners
+            <span className="text-tennessee-orange-600 font-semibold">5.0 Average Rating</span> - Real Google Reviews from local Upstate homeowners
           </p>
         </div>
       </section>
@@ -117,14 +117,14 @@ const Testimonials = () => {
       {/* How Reviews Are Collected */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6 text-center">
             How Our Reviews Are Collected
           </h2>
           <p className="text-lg text-gray-700 text-center mb-8">
             Our reviews come from real homeowners we've worked with across the Upstate of South Carolina. We don't edit or script feedback, and we never offer incentives for reviews. What you see here reflects real experiences.
           </p>
           <div className="text-center">
-            <p className="text-xl font-semibold text-gray-900">
+            <p className="text-xl font-semibold text-tennessee-orange-600">
               Insured, Licensed and Trusted
             </p>
           </div>

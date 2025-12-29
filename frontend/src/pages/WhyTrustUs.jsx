@@ -105,7 +105,7 @@ const WhyTrustUs = () => {
       {/* Main Trust Points */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-4 text-center">
             What Makes Us Different
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
@@ -121,7 +121,7 @@ const WhyTrustUs = () => {
                       <reason.icon className="h-7 w-7 text-tennessee-orange-600" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      <h3 className="text-xl font-bold text-tennessee-orange-600 mb-3">
                         {reason.title}
                       </h3>
                       <p className="text-gray-700 mb-4">
@@ -147,7 +147,7 @@ const WhyTrustUs = () => {
       {/* Our Promise Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-4 text-center">
             Our Promise to You
           </h2>
           <p className="text-lg text-gray-600 text-center mb-10">
@@ -172,7 +172,7 @@ const WhyTrustUs = () => {
       {/* Testimonial Highlight */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-10">
             What Our Customers Say
           </h2>
 
@@ -200,7 +200,7 @@ const WhyTrustUs = () => {
       {/* Local Business Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6">
             Local, Family-Owned Business
           </h2>
           <p className="text-lg text-gray-700 mb-4">
@@ -209,7 +209,7 @@ const WhyTrustUs = () => {
           <p className="text-lg text-gray-700 mb-8">
             When you call JHS, you're not getting a call center - you're talking directly to the people who will be working on your home. That's the way it should be.
           </p>
-          <p className="text-xl font-semibold text-gray-900">
+          <p className="text-xl font-semibold text-tennessee-orange-600">
             Serving Spartanburg, Greenville, Greer, Boiling Springs, and surrounding areas.
           </p>
         </div>

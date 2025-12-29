@@ -12,7 +12,7 @@ const About = () => {
             About JHS Crawlspace Specialist
           </h1>
           <p className="text-xl text-gray-600">
-            Honest crawlspace solutions for Upstate South Carolina homeowners
+            <span className="text-tennessee-orange-600 font-semibold">Honest crawlspace solutions</span> for Upstate South Carolina homeowners
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
               Our Approach
             </h2>
             <p className="text-lg text-gray-700 mb-4">
@@ -45,7 +45,7 @@ const About = () => {
           </div>
 
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
               Meet the Team
             </h2>
             <p className="text-lg text-gray-700 mb-4">
@@ -66,7 +66,7 @@ const About = () => {
           </div>
 
           <div className="bg-gray-50 rounded-lg p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6 text-center">
               Serving the Upstate of South Carolina
             </h2>
             <p className="text-lg text-gray-700 text-center">

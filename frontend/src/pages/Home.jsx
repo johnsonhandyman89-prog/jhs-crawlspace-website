@@ -123,7 +123,7 @@ const Home = () => {
       {/* Problem Statement */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6 text-center">
             Crawlspace Problems Don't Fix Themselves
           </h2>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-8">
@@ -138,7 +138,7 @@ const Home = () => {
       {/* Services Grid */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-12 text-center">
             Our Services
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -149,7 +149,7 @@ const Home = () => {
                 onClick={() => handleServiceClick(service.title)}
               >
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-xl font-semibold text-tennessee-orange-700 mb-3">
                     {service.title}
                   </h3>
                   <p className="text-gray-600">
@@ -188,7 +188,7 @@ const Home = () => {
             />
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-12 text-center">
             Why Homeowners Choose JHS Crawlspace Specialist
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -215,8 +215,8 @@ const Home = () => {
       {/* Service Areas */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Proudly Serving the <span className="text-tennessee-orange-600">Upstate of South Carolina</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6">
+            Proudly Serving the Upstate of South Carolina
           </h2>
           <p className="text-lg text-gray-700">
             <span className="text-tennessee-orange-600 font-semibold">Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford</span>, and surrounding areas.

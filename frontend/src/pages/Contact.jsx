@@ -71,7 +71,7 @@ const Contact = () => {
             Request a Free Crawlspace Quote
           </h1>
           <p className="text-xl text-gray-600">
-            Honest inspections. No pressure. Clear recommendations.
+            <span className="text-tennessee-orange-600 font-semibold">Honest inspections. No pressure. Clear recommendations.</span>
           </p>
         </div>
       </section>
@@ -83,7 +83,7 @@ const Contact = () => {
             {/* Left Column - Info */}
             <div>
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
                   Not sure what your crawlspace needs?
                 </h2>
                 <p className="text-lg text-gray-700 mb-4">
@@ -96,7 +96,7 @@ const Contact = () => {
 
               <Card className="mb-8 border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">What to Expect</CardTitle>
+                  <CardTitle className="text-2xl text-tennessee-orange-600">What to Expect</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -112,7 +112,7 @@ const Contact = () => {
 
               <Card className="border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">This Is For Homeowners Who</CardTitle>
+                  <CardTitle className="text-2xl text-tennessee-orange-600">This Is For Homeowners Who</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -131,7 +131,7 @@ const Contact = () => {
             <div>
               <Card className="border-gray-200 mb-8">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">Request Your Free Quote</CardTitle>
+                  <CardTitle className="text-2xl text-tennessee-orange-600">Request Your Free Quote</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form 

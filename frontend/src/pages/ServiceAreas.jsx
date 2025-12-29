@@ -57,7 +57,7 @@ const ServiceAreas = () => {
       {/* Primary Service Areas */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-12 text-center">
             Primary Service Areas
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -67,7 +67,7 @@ const ServiceAreas = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-tennessee-orange-100 rounded-full mb-4">
                     <MapPin className="h-8 w-8 text-tennessee-orange-600" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-tennessee-orange-600 mb-3">
                     {area.name}
                   </h3>
                   <p className="text-gray-600">
@@ -83,7 +83,7 @@ const ServiceAreas = () => {
       {/* Additional Areas */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6 text-center">
             We Also Serve
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12">
@@ -103,8 +103,8 @@ const ServiceAreas = () => {
       {/* Why Local Matters */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Why <span className="text-tennessee-orange-600">Local</span> Matters
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6">
+            Why Local Matters
           </h2>
           <p className="text-lg text-gray-700 mb-6">
             JHS Crawlspace Specialist is a local, family-owned business. We understand the unique challenges of crawlspaces in the Upstate - from our red clay soil to our humid summers.
@@ -121,7 +121,7 @@ const ServiceAreas = () => {
       {/* Don't See Your Area */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
             Don't See Your Area Listed?
           </h2>
           <p className="text-lg text-gray-700 mb-8">

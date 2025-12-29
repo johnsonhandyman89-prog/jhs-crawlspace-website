@@ -51,7 +51,7 @@ const Services = () => {
             Crawlspace Services
           </h1>
           <p className="text-xl text-gray-600 mb-4">
-            Moisture Control Solutions That Make Sense
+            <span className="text-tennessee-orange-600 font-semibold">Moisture Control Solutions That Make Sense</span>
           </p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Serving Spartanburg, Greenville, and the Upstate of South Carolina
@@ -78,7 +78,7 @@ const Services = () => {
             {services.map((service, index) => (
               <Card key={index} className="border-gray-200 hover:border-tennessee-orange-500 transition-all duration-300">
                 <CardHeader className="bg-white">
-                  <CardTitle className="text-2xl text-gray-900">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl text-tennessee-orange-600">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="bg-white pt-6">
                   <p className="text-gray-700 text-lg mb-4">
@@ -99,7 +99,7 @@ const Services = () => {
       {/* Service Areas */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
             Service Areas
           </h2>
           <p className="text-lg text-gray-700">

@@ -66,7 +66,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-tennessee-orange-500">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-4 text-tennessee-orange-500">Our Services</h4>
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index} className="text-gray-400">
@@ -95,7 +95,7 @@ const Footer = () => {
 
           {/* Service Areas */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 flex items-center gap-2">
+            <h4 className="text-lg font-semibold mb-4 text-tennessee-orange-500 flex items-center gap-2">
               <MapPin className="h-5 w-5 text-tennessee-orange-600" />
               Service Areas
             </h4>

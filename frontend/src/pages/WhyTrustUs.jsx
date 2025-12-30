@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Shield, Eye, MessageSquare, Home, FileCheck, Award, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
@@ -209,8 +210,11 @@ const WhyTrustUs = () => {
           <p className="text-lg text-gray-700 mb-8">
             When you call JHS, you're not getting a call center - you're talking directly to the people who will be working on your home. That's the way it should be.
           </p>
-          <p className="text-xl font-semibold text-tennessee-orange-600">
+          <p className="text-xl font-semibold text-tennessee-orange-600 mb-4">
             Serving Spartanburg, Greenville, Greer, Boiling Springs, and surrounding areas.
+          </p>
+          <p className="text-gray-600">
+            <Link to="/service-areas" className="text-tennessee-orange-600 hover:underline font-medium">View all service areas</Link> | <Link to="/services" className="text-tennessee-orange-600 hover:underline font-medium">See our services</Link>
           </p>
         </div>
       </section>

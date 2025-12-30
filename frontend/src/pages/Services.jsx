@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
@@ -66,7 +67,7 @@ const Services = () => {
             Every crawlspace is different. Some need simple moisture control, while others require more involved solutions.
           </p>
           <p className="text-lg text-gray-700">
-            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - <span className="text-tennessee-orange-600 font-semibold">no pressure</span> and <span className="text-tennessee-orange-600 font-semibold">no unnecessary upsells</span>.
+            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - <span className="text-tennessee-orange-600 font-semibold">no pressure</span> and <span className="text-tennessee-orange-600 font-semibold">no unnecessary upsells</span>. Learn more about <Link to="/why-trust-us" className="text-tennessee-orange-600 hover:underline font-medium">why homeowners trust us</Link> or read <Link to="/testimonials" className="text-tennessee-orange-600 hover:underline font-medium">what our customers say</Link>.
           </p>
         </div>
       </section>
@@ -102,8 +103,11 @@ const Services = () => {
           <h2 className="text-3xl font-bold text-tennessee-orange-600 mb-6">
             Service Areas
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mb-4">
             Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford, and surrounding Upstate SC areas.
+          </p>
+          <p className="text-gray-600">
+            <Link to="/service-areas" className="text-tennessee-orange-600 hover:underline font-medium">View all service areas</Link> to learn about crawlspace conditions in your community.
           </p>
         </div>
       </section>
@@ -114,8 +118,11 @@ const Services = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-tennessee-orange-600 mb-4">
             Selling Your Home or Working With a Realtor?
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mb-4">
             JHS Crawlspace Specialist helps homeowners and real estate professionals correct crawlspace issues that can delay inspections or closings. We address moisture, ground coverage, ventilation, and humidity concerns with clear documentation and efficient turnaround — helping homes move to the closing table with confidence.
+          </p>
+          <p className="text-gray-700">
+            Our team is experienced with CL-100 (Wood Infestation Report) requirements and understands what inspectors look for in South Carolina real estate transactions. Whether you need pre-listing corrections or post-inspection repairs, we provide fast, professional service to keep your sale on track.
           </p>
         </div>
       </section>

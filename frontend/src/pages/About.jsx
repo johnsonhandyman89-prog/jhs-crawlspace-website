@@ -58,9 +58,9 @@ const About = () => {
 
           {/* Image placeholder */}
           <div className="mb-12">
-            <img 
+            <img
               src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/8y2zdypk_IMG_6755.jpeg"
-              alt="Nathan and Kristen Johnson - JHS Crawlspace Specialist Team" 
+              alt="Nathan and Kristen Johnson - JHS Crawlspace Specialist owners providing crawlspace encapsulation and vapor barrier services in Upstate South Carolina"
               className="rounded-lg shadow-lg w-full max-w-2xl mx-auto"
             />
           </div>

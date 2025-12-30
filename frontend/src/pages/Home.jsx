@@ -130,7 +130,7 @@ const Home = () => {
             Moisture, open vents, and poor ground coverage can lead to <span className="text-tennessee-orange-600 font-semibold">mold</span>, <span className="text-tennessee-orange-600 font-semibold">odors</span>, <span className="text-tennessee-orange-600 font-semibold">wood rot</span>, and <span className="text-tennessee-orange-600 font-semibold">higher energy bills</span>.
           </p>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation.
+            At JHS Crawlspace Specialist, we <span className="text-tennessee-orange-600 font-semibold">inspect first</span> and recommend only what your crawlspace actually needs - not a one-size-fits-all encapsulation. <Link to="/services" className="text-tennessee-orange-600 hover:underline font-medium">Explore our services</Link> to learn more about our approach.
           </p>
         </div>
       </section>
@@ -181,9 +181,9 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           {/* Feature Image */}
           <div className="mb-12">
-            <img 
+            <img
               src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/3m5wultu_43E57321-1818-4248-A749-8812FD3EC5CE.png"
-              alt="Crawlspace Before and After - JHS Crawlspace Specialist"
+              alt="Crawlspace vapor barrier installation before and after - JHS Crawlspace Specialist moisture control services in Spartanburg and Greenville SC"
               className="rounded-lg shadow-xl w-full max-w-4xl mx-auto mb-12"
             />
           </div>
@@ -218,8 +218,11 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6">
             Proudly Serving the Upstate of South Carolina
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mb-4">
             <span className="text-tennessee-orange-600 font-semibold">Spartanburg, Greenville, Greer, Boiling Springs, Moore, Roebuck, Duncan, Inman, Wellford</span>, and surrounding areas.
+          </p>
+          <p className="text-gray-600">
+            <Link to="/service-areas" className="text-tennessee-orange-600 hover:underline font-medium">See all service areas</Link> or <Link to="/contact" className="text-tennessee-orange-600 hover:underline font-medium">contact us</Link> to schedule your free inspection.
           </p>
         </div>
       </section>
@@ -230,8 +233,11 @@ const Home = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-tennessee-orange-600 mb-4">
             Selling Your Home or Working With a Realtor?
           </h2>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mb-4">
             JHS Crawlspace Specialist helps homeowners and real estate professionals correct crawlspace issues that can delay inspections or closings. We address moisture, ground coverage, ventilation, and humidity concerns with clear documentation and efficient turnaround — helping homes move to the closing table with confidence.
+          </p>
+          <p className="text-gray-700">
+            Our team is experienced with CL-100 (Wood Infestation Report) requirements and understands what inspectors look for in South Carolina real estate transactions. Whether you need pre-listing corrections or post-inspection repairs, we provide fast, professional service to keep your sale on track.
           </p>
         </div>
       </section>
@@ -243,6 +249,22 @@ const Home = () => {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                What causes crawlspace moisture problems?
+              </h3>
+              <p className="text-gray-700">
+                Crawlspace moisture typically comes from three sources: ground moisture evaporating through exposed dirt floors, humid outside air entering through open vents, and water intrusion from poor drainage or grading. In the Upstate of South Carolina, our humid climate and clay-heavy soils make ground moisture especially common.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                What is a vapor barrier and why do I need one?
+              </h3>
+              <p className="text-gray-700">
+                A vapor barrier is a durable plastic liner installed over the dirt floor of your crawlspace. It prevents ground moisture from evaporating into the crawlspace air, which helps reduce humidity, odors, and the conditions that lead to mold and wood rot. A properly installed vapor barrier with 100% ground coverage is often the most effective first step in crawlspace moisture control.
+              </p>
+            </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 How long does a crawlspace service typically take?
@@ -264,7 +286,15 @@ const Home = () => {
                 Will this help with odors and high humidity in my home?
               </h3>
               <p className="text-gray-700">
-                Yes. Crawlspace moisture is a common cause of musty odors and elevated indoor humidity. Proper moisture control often improves air quality throughout the home.
+                Yes. Crawlspace moisture is a common cause of musty odors and elevated indoor humidity. Up to 50% of the air you breathe on the first floor comes from your crawlspace, so addressing moisture issues below often improves air quality and comfort throughout the home.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                When do I need a dehumidifier in my crawlspace?
+              </h3>
+              <p className="text-gray-700">
+                A crawlspace dehumidifier is recommended when humidity levels remain high even after installing a vapor barrier and sealing vents. This is common in homes built on low-lying lots, near water, or in areas with high seasonal humidity. We measure humidity levels during your inspection and recommend a dehumidifier only when it's truly needed.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -272,7 +302,15 @@ const Home = () => {
                 Is this work important when selling a home?
               </h3>
               <p className="text-gray-700">
-                Absolutely. Crawlspace conditions are commonly flagged during inspections. Addressing issues early helps avoid delays and renegotiations.
+                Absolutely. Crawlspace conditions are commonly flagged during home inspections and CL-100 (Wood Infestation) reports in South Carolina. Addressing moisture, vapor barrier, and ventilation issues before listing — or quickly after an inspection — helps avoid delays and renegotiations that can jeopardize a sale.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Do you offer free inspections?
+              </h3>
+              <p className="text-gray-700">
+                Yes. We provide free, no-obligation crawlspace inspections for homeowners throughout the Upstate of South Carolina. We'll explain what we find, discuss your options, and give you honest recommendations — even if that means you don't need any work done.
               </p>
             </div>
           </div>

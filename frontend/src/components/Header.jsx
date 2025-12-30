@@ -25,9 +25,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png" 
-              alt="JHS Crawlspace Specialist" 
+            <img
+              src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png"
+              alt="JHS Crawlspace Specialist - Crawlspace encapsulation and moisture control in Spartanburg and Greenville SC"
               className="h-14"
             />
           </Link>

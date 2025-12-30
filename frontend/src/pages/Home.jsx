@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle, Shield, Award, Users } from 'lucide-react';
+import headerHomeImage from '../assets/images/header-home.png';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../components/ui/dialog';
@@ -98,26 +99,12 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-crawlspace bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Crawlspace Moisture & Vapor Barrier Specialists
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-4">
-            Upstate South Carolina
-          </p>
-          <p className="text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
-            <span className="text-tennessee-orange-400 font-semibold">Honest inspections.</span> <span className="text-tennessee-orange-400 font-semibold">No pressure.</span> Solutions that actually make sense.
-          </p>
-          <Button
-            size="lg"
-            className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
-            onClick={() => window.location.href = 'tel:8648049384'}
-          >
-            <Phone className="mr-2 h-5 w-5" />
-            Call Now: (864) 804-9384
-          </Button>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerHomeImage}
+          alt="Crawlspace Solutions You Can Trust - Protect Your Home & Family from Crawlspace Moisture, Mold, and Structural Issues"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Problem Statement */}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Shield, Eye, MessageSquare, Home, FileCheck, Award, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import headerWhyTrustUsImage from '../assets/images/header-why-trust-us.png';
 
 const WhyTrustUs = () => {
   const trustReasons = [
@@ -86,21 +87,12 @@ const WhyTrustUs = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-team bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Why Homeowners Trust JHS
-          </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
-            We built our business on honesty, expertise, and treating every homeowner the way we'd want to be treated. Here's what sets us apart.
-          </p>
-          <div className="flex items-center justify-center gap-2">
-            <Shield className="h-6 w-6 text-tennessee-orange-400" />
-            <span className="text-lg font-semibold text-tennessee-orange-400">
-              Insured, Licensed & Trusted
-            </span>
-          </div>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerWhyTrustUsImage}
+          alt="Why Homeowners Trust JHS - Locally Owned & Operated, Licensed & Insured, 5-Star Customer Service"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Main Trust Points */}

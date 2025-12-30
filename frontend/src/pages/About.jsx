@@ -14,6 +14,9 @@ const About = () => {
           <p className="text-xl text-gray-600">
             <span className="text-tennessee-orange-600 font-semibold">Honest crawlspace solutions</span> for Upstate South Carolina homeowners
           </p>
+          <p className="text-lg text-gray-600 mt-4">
+            We specialize exclusively in crawlspace moisture control, vapor barriers, and related solutions.
+          </p>
         </div>
       </section>
 
@@ -37,7 +40,7 @@ const About = () => {
               Our Approach
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. We take the time to explain what is happening, why it is happening, and what options make sense - without pushing unnecessary work.
+              Every home is different. Some crawlspaces need basic moisture control, while others require more involved solutions. Having worked under hundreds of Upstate South Carolina homes, we have seen the range of conditions and know what tends to work in this area. We take the time to explain what is happening, why it is happening, and what options make sense - without pushing unnecessary work.
             </p>
             <p className="text-lg text-gray-700">
               Homeowners, buyers, sellers, and realtors trust us because we keep things clear, honest, and practical.

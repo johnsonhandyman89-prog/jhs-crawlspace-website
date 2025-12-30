@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Star, Phone, Mail, ExternalLink } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
@@ -124,8 +125,11 @@ const Testimonials = () => {
             Our reviews come from real homeowners we've worked with across the Upstate of South Carolina. We don't edit or script feedback, and we never offer incentives for reviews. What you see here reflects real experiences.
           </p>
           <div className="text-center">
-            <p className="text-xl font-semibold text-tennessee-orange-600">
+            <p className="text-xl font-semibold text-tennessee-orange-600 mb-4">
               Insured, Licensed and Trusted
+            </p>
+            <p className="text-gray-600">
+              <Link to="/why-trust-us" className="text-tennessee-orange-600 hover:underline font-medium">Learn more about why homeowners trust us</Link> | <Link to="/services" className="text-tennessee-orange-600 hover:underline font-medium">View our services</Link>
             </p>
           </div>
         </div>

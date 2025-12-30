@@ -39,9 +39,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png" 
-                alt="JHS Crawlspace Specialist" 
+              <img
+                src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png"
+                alt="JHS Crawlspace Specialist - Local crawlspace vapor barrier and dehumidifier services in Upstate South Carolina"
                 className="h-16"
               />
             </div>

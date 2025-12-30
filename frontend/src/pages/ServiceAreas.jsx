@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, MapPin, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import headerServiceAreasImage from '../assets/images/header-service-areas.png';
 
 const ServiceAreas = () => {
   const primaryAreas = [
@@ -86,18 +87,12 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-home-exterior bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Service Areas
-          </h1>
-          <p className="text-xl text-gray-200 mb-4">
-            Proudly Serving the <span className="text-tennessee-orange-400 font-semibold">Upstate of South Carolina</span>
-          </p>
-          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
-            Local, owner-operated crawlspace services for Spartanburg, Greenville, and surrounding communities.
-          </p>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerServiceAreasImage}
+          alt="Service Areas - Proudly Serving the Upstate of South Carolina"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Primary Service Areas */}

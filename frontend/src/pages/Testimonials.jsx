@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Star, Phone, Mail, ExternalLink } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
+import headerTestimonialsImage from '../assets/images/header-testimonials.png';
 
 const Testimonials = () => {
   const reviews = [
@@ -61,20 +62,12 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-construction bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            What Our Customers Are Saying About Us
-          </h1>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-8 w-8 fill-tennessee-orange-500 text-tennessee-orange-500" />
-            ))}
-          </div>
-          <p className="text-xl text-gray-200">
-            <span className="text-tennessee-orange-400 font-semibold">5.0 Average Rating</span> - Real Google Reviews from local Upstate homeowners
-          </p>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerTestimonialsImage}
+          alt="Testimonials"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Reviews Grid */}

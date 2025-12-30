@@ -108,6 +108,18 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Selling Your Home Section */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-tennessee-orange-600 mb-4">
+            Selling Your Home or Working With a Realtor?
+          </h2>
+          <p className="text-lg text-gray-700">
+            JHS Crawlspace Specialist helps homeowners and real estate professionals correct crawlspace issues that can delay inspections or closings. We address moisture, ground coverage, ventilation, and humidity concerns with clear documentation and efficient turnaround — helping homes move to the closing table with confidence.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">

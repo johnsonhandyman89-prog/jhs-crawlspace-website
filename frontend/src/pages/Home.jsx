@@ -224,6 +224,61 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Selling Your Home Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-tennessee-orange-600 mb-4">
+            Selling Your Home or Working With a Realtor?
+          </h2>
+          <p className="text-lg text-gray-700">
+            JHS Crawlspace Specialist helps homeowners and real estate professionals correct crawlspace issues that can delay inspections or closings. We address moisture, ground coverage, ventilation, and humidity concerns with clear documentation and efficient turnaround — helping homes move to the closing table with confidence.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-12 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                How long does a crawlspace service typically take?
+              </h3>
+              <p className="text-gray-700">
+                Most crawlspace services can be completed in one day, depending on size and conditions. We provide a clear timeline during your inspection.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Do I need full encapsulation, or will a vapor barrier help?
+              </h3>
+              <p className="text-gray-700">
+                Not every crawlspace requires full encapsulation. Many homes see major improvement with proper ground coverage, sealing, and moisture control. We recommend only what your crawlspace actually needs.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Will this help with odors and high humidity in my home?
+              </h3>
+              <p className="text-gray-700">
+                Yes. Crawlspace moisture is a common cause of musty odors and elevated indoor humidity. Proper moisture control often improves air quality throughout the home.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Is this work important when selling a home?
+              </h3>
+              <p className="text-gray-700">
+                Absolutely. Crawlspace conditions are commonly flagged during inspections. Addressing issues early helps avoid delays and renegotiations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 px-4 bg-tennessee-orange-600">
         <div className="max-w-4xl mx-auto text-center">

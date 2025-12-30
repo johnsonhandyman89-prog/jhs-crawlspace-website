@@ -46,15 +46,15 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-vapor-barrier bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Crawlspace Services
           </h1>
-          <p className="text-xl text-gray-600 mb-4">
-            <span className="text-tennessee-orange-600 font-semibold">Moisture Control Solutions That Make Sense</span>
+          <p className="text-xl text-gray-200 mb-4">
+            <span className="text-tennessee-orange-400 font-semibold">Moisture Control Solutions That Make Sense</span>
           </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
             Serving Spartanburg, Greenville, and the Upstate of South Carolina
           </p>
         </div>
@@ -128,13 +128,13 @@ const Services = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-tennessee-orange-600">
+      <section className="bg-hero-foundation bg-overlay-orange py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Schedule a Free Inspection
           </h2>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >

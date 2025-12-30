@@ -86,17 +86,17 @@ const WhyTrustUs = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-team bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Why Homeowners Trust JHS
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             We built our business on honesty, expertise, and treating every homeowner the way we'd want to be treated. Here's what sets us apart.
           </p>
           <div className="flex items-center justify-center gap-2">
-            <Shield className="h-6 w-6 text-tennessee-orange-600" />
-            <span className="text-lg font-semibold text-tennessee-orange-600">
+            <Shield className="h-6 w-6 text-tennessee-orange-400" />
+            <span className="text-lg font-semibold text-tennessee-orange-400">
               Insured, Licensed & Trusted
             </span>
           </div>
@@ -220,7 +220,7 @@ const WhyTrustUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-tennessee-orange-600">
+      <section className="bg-hero-crawlspace bg-overlay-orange py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Schedule Your Free Crawlspace Inspection

@@ -7,34 +7,79 @@ const ServiceAreas = () => {
   const primaryAreas = [
     {
       name: 'Spartanburg',
-      description: 'Our home base - serving Spartanburg and all surrounding neighborhoods.'
+      description: 'Our home base - serving Spartanburg and all surrounding neighborhoods. Many older homes here experience moisture buildup due to humid summers and red clay soil that holds water close to foundations.'
     },
     {
       name: 'Greenville',
-      description: 'Full crawlspace services throughout the Greenville area.'
+      description: 'Full crawlspace services throughout the Greenville area. Greenville homeowners often notice musty odors or higher indoor humidity — common signs of crawlspace moisture issues in homes built on our region\'s sloped terrain.'
     },
     {
       name: 'Greer',
-      description: 'Conveniently located between Spartanburg and Greenville.'
+      description: 'Conveniently located between Spartanburg and Greenville. Homes in Greer frequently benefit from improved ground coverage and ventilation, especially in neighborhoods with older construction or heavy tree cover.'
     }
   ];
 
   const additionalAreas = [
-    'Boiling Springs',
-    'Moore',
-    'Roebuck',
-    'Duncan',
-    'Inman',
-    'Wellford',
-    'Lyman',
-    'Reidville',
-    'Woodruff',
-    'Simpsonville',
-    'Mauldin',
-    'Taylors',
-    'Travelers Rest',
-    'Fountain Inn',
-    'Landrum'
+    {
+      name: 'Boiling Springs',
+      description: 'Growing neighborhoods here often see crawlspace ventilation issues, especially in newer developments built on reclaimed land.'
+    },
+    {
+      name: 'Moore',
+      description: 'Rural properties in Moore commonly deal with standing water and ground moisture from nearby creeks and low-lying areas.'
+    },
+    {
+      name: 'Roebuck',
+      description: 'Older homes in Roebuck can develop musty smells and elevated humidity from inadequate vapor barriers.'
+    },
+    {
+      name: 'Duncan',
+      description: 'Duncan homeowners often experience humidity concerns during warmer months, particularly in homes without proper crawlspace sealing.'
+    },
+    {
+      name: 'Inman',
+      description: 'Properties near Inman frequently need moisture control due to the area\'s mix of clay-heavy soils and seasonal rain.'
+    },
+    {
+      name: 'Wellford',
+      description: 'Crawlspaces in Wellford homes can trap moisture, leading to odor and air quality concerns if left untreated.'
+    },
+    {
+      name: 'Lyman',
+      description: 'Homes in Lyman often benefit from improved ground coverage to combat the humid conditions common in this area.'
+    },
+    {
+      name: 'Reidville',
+      description: 'Reidville properties sometimes struggle with excess moisture from seasonal groundwater and dense soil.'
+    },
+    {
+      name: 'Woodruff',
+      description: 'Older construction in Woodruff frequently has open vents or thin vapor barriers that allow humidity into the crawlspace.'
+    },
+    {
+      name: 'Simpsonville',
+      description: 'Simpsonville homeowners often notice signs of crawlspace moisture, especially in homes with mature landscaping and shaded foundations.'
+    },
+    {
+      name: 'Mauldin',
+      description: 'Many Mauldin homes experience elevated indoor humidity tied to crawlspace conditions, particularly during summer.'
+    },
+    {
+      name: 'Taylors',
+      description: 'Crawlspaces in Taylors can develop moisture problems from poor drainage and the area\'s naturally humid climate.'
+    },
+    {
+      name: 'Travelers Rest',
+      description: 'Homes near the mountains in Travelers Rest may see groundwater seepage and damp crawlspaces during rainy seasons.'
+    },
+    {
+      name: 'Fountain Inn',
+      description: 'Fountain Inn properties often face moisture buildup in crawlspaces due to older construction methods and regional humidity.'
+    },
+    {
+      name: 'Landrum',
+      description: 'Landrum homeowners sometimes deal with cool, damp crawlspaces, particularly in foothill properties with less sun exposure.'
+    }
   ];
 
   return (
@@ -91,9 +136,12 @@ const ServiceAreas = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {additionalAreas.map((area, index) => (
-              <div key={index} className="flex items-center gap-2 bg-white p-3 rounded-lg shadow-sm">
-                <CheckCircle className="h-5 w-5 text-tennessee-orange-600 flex-shrink-0" />
-                <span className="text-gray-700 font-medium">{area}</span>
+              <div key={index} className="group bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-tennessee-orange-600 flex-shrink-0" />
+                  <span className="text-gray-700 font-medium">{area.name}</span>
+                </div>
+                <p className="text-xs text-gray-500 mt-2 leading-snug">{area.description}</p>
               </div>
             ))}
           </div>

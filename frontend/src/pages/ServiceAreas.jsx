@@ -86,15 +86,15 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-home-exterior bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Service Areas
           </h1>
-          <p className="text-xl text-gray-600 mb-4">
-            Proudly Serving the <span className="text-tennessee-orange-600 font-semibold">Upstate of South Carolina</span>
+          <p className="text-xl text-gray-200 mb-4">
+            Proudly Serving the <span className="text-tennessee-orange-400 font-semibold">Upstate of South Carolina</span>
           </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
             Local, owner-operated crawlspace services for Spartanburg, Greenville, and surrounding communities.
           </p>
         </div>
@@ -180,7 +180,7 @@ const ServiceAreas = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-tennessee-orange-600">
+      <section className="bg-hero-foundation bg-overlay-orange py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready for a Free Crawlspace Inspection?

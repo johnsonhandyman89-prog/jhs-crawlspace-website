@@ -65,13 +65,13 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-moisture bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Request a Free Crawlspace Quote
           </h1>
-          <p className="text-xl text-gray-600">
-            <span className="text-tennessee-orange-600 font-semibold">Honest inspections. No pressure. Clear recommendations.</span>
+          <p className="text-xl text-gray-200">
+            <span className="text-tennessee-orange-400 font-semibold">Honest inspections. No pressure. Clear recommendations.</span>
           </p>
         </div>
       </section>

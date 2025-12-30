@@ -61,9 +61,9 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-construction bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What Our Customers Are Saying About Us
           </h1>
           <div className="flex items-center justify-center gap-2 mb-4">
@@ -71,8 +71,8 @@ const Testimonials = () => {
               <Star key={star} className="h-8 w-8 fill-tennessee-orange-500 text-tennessee-orange-500" />
             ))}
           </div>
-          <p className="text-xl text-gray-600">
-            <span className="text-tennessee-orange-600 font-semibold">5.0 Average Rating</span> - Real Google Reviews from local Upstate homeowners
+          <p className="text-xl text-gray-200">
+            <span className="text-tennessee-orange-400 font-semibold">5.0 Average Rating</span> - Real Google Reviews from local Upstate homeowners
           </p>
         </div>
       </section>
@@ -136,22 +136,22 @@ const Testimonials = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 px-4 bg-tennessee-orange-600">
+      <section className="bg-hero-vapor-barrier bg-overlay-orange py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Ready to Experience Our Service?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
               onClick={() => window.location.href = 'tel:8648049384'}
             >
               <Phone className="mr-2 h-5 w-5" />
               Call (864) 804-9384
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gray-900 text-white hover:bg-gray-800 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
               onClick={() => window.location.href = 'mailto:jhscrawlspace@gmail.com'}
             >

@@ -98,19 +98,19 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-4">
+      <section className="bg-hero-crawlspace bg-overlay-dark py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Crawlspace Moisture & Vapor Barrier Specialists
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-4">
+          <p className="text-xl md:text-2xl text-gray-200 mb-4">
             Upstate South Carolina
           </p>
-          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            <span className="text-tennessee-orange-600 font-semibold">Honest inspections.</span> <span className="text-tennessee-orange-600 font-semibold">No pressure.</span> Solutions that actually make sense.
+          <p className="text-lg text-gray-100 mb-8 max-w-3xl mx-auto">
+            <span className="text-tennessee-orange-400 font-semibold">Honest inspections.</span> <span className="text-tennessee-orange-400 font-semibold">No pressure.</span> Solutions that actually make sense.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
             onClick={() => window.location.href = 'tel:8648049384'}
           >
@@ -318,7 +318,7 @@ const Home = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-tennessee-orange-600">
+      <section className="bg-hero-home-exterior bg-overlay-orange py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Crawlspace work done right. Built to last a lifetime.
@@ -326,8 +326,8 @@ const Home = () => {
           <p className="text-xl text-white mb-8">
             Every home we protect is treated like our own. Family-owned, locally trusted.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white text-tennessee-orange-600 hover:bg-gray-100 text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg font-semibold"
             onClick={() => window.location.href = 'tel:8648049384'}
           >

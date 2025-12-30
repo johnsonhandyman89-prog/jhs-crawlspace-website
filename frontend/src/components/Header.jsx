@@ -22,13 +22,13 @@ const Header = () => {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-36">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src="https://customer-assets.emergentagent.com/job_f3a16e62-6e6f-4451-8594-0c0b92e67168/artifacts/ca08dsl3_600091FD-051D-4467-89A9-38D40B4931AB.png"
               alt="JHS Crawlspace Specialist - Crawlspace encapsulation and moisture control in Spartanburg and Greenville SC"
-              className="h-14"
+              className="h-28"
             />
           </Link>
 

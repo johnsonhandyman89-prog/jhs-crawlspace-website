@@ -1,23 +1,18 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import headerAboutImage from '../assets/images/header-about.png';
 
 const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-team bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About JHS Crawlspace Specialist
-          </h1>
-          <p className="text-xl text-gray-200">
-            <span className="text-tennessee-orange-400 font-semibold">Honest crawlspace solutions</span> for Upstate South Carolina homeowners
-          </p>
-          <p className="text-lg text-gray-100 mt-4">
-            We specialize exclusively in crawlspace moisture control, vapor barriers, and related solutions.
-          </p>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerAboutImage}
+          alt="About Us"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Main Content */}

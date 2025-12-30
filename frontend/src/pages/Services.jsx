@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import headerServicesImage from '../assets/images/header-services.png';
 
 const Services = () => {
   const services = [
@@ -46,18 +47,12 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-hero-vapor-barrier bg-overlay-dark py-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Crawlspace Services
-          </h1>
-          <p className="text-xl text-gray-200 mb-4">
-            <span className="text-tennessee-orange-400 font-semibold">Moisture Control Solutions That Make Sense</span>
-          </p>
-          <p className="text-lg text-gray-100 max-w-3xl mx-auto">
-            Serving Spartanburg, Greenville, and the Upstate of South Carolina
-          </p>
-        </div>
+      <section className="w-full">
+        <img
+          src={headerServicesImage}
+          alt="Services - Draining & Encapsulation, Mold Remediation, Crawlspace Repair & More"
+          className="w-full h-auto"
+        />
       </section>
 
       {/* Intro */}

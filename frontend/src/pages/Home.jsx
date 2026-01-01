@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { useToast } from '../hooks/use-toast';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 
 const Home = () => {
   const { toast } = useToast();
@@ -96,6 +97,48 @@ const Home = () => {
     { icon: Users, text: 'No upselling' }
   ];
 
+  const problemExplanations = [
+    {
+      id: 'musty-smell',
+      title: 'Musty smell in the home',
+      explanation: 'A musty odor inside your home often comes from the crawlspace below. When moisture builds up under the house, it creates conditions where mold and mildew can grow. Since air naturally rises from the crawlspace into your living areas, those odors come with it. This is commonly corrected by installing a vapor barrier over the dirt floor, sealing open vents, and in some cases adding a dehumidifier to control humidity levels.'
+    },
+    {
+      id: 'buckling-floors',
+      title: 'Buckling or soft floors',
+      explanation: 'Soft, bouncy, or uneven floors can be a sign of excess moisture in the crawlspace. Over time, high humidity causes floor joists and subflooring to absorb moisture, which can weaken the wood and lead to sagging or buckling. Addressing the moisture source with proper ground coverage, vent sealing, and humidity control helps stop further damage. In some cases, structural supports may be recommended to stabilize affected areas.'
+    },
+    {
+      id: 'high-humidity',
+      title: 'High humidity',
+      explanation: 'If your home feels humid or clammy, especially on the first floor, the crawlspace is often the source. Moisture from the ground evaporates into the crawlspace and rises into your living space. Installing a quality vapor barrier with full ground coverage and sealing vents helps reduce this moisture. When humidity remains high, a properly sized dehumidifier can maintain healthy levels year-round.'
+    },
+    {
+      id: 'visible-moisture',
+      title: 'Visible moisture or standing water',
+      explanation: 'Standing water or visible moisture in a crawlspace usually indicates drainage problems, groundwater seepage, or plumbing issues. It is important to identify the water source first. Common solutions include improving exterior drainage, installing a sump pump if needed, and adding a vapor barrier to control ground moisture. Proper moisture management prevents long-term damage to your home.'
+    },
+    {
+      id: 'mold-concerns',
+      title: 'Mold concerns',
+      explanation: 'Mold in a crawlspace is typically caused by excess moisture and poor ventilation. Addressing the root cause is key. This often involves installing a vapor barrier, sealing vents to keep humid outside air out, and controlling humidity with a dehumidifier if needed. Once the environment is dry and controlled, mold conditions are less likely to return. Professional treatment may be recommended depending on the extent of growth.'
+    },
+    {
+      id: 'selling-home',
+      title: 'Selling the home / inspection issues',
+      explanation: 'Crawlspace problems are commonly flagged during home inspections and CL-100 reports in South Carolina. Issues like missing or inadequate vapor barriers, open vents, moisture damage, or mold can delay closings or lead to renegotiations. Many of these concerns can be corrected quickly with proper ground coverage, vent sealing, and moisture control. We work with homeowners and real estate professionals to resolve inspection findings efficiently.'
+    }
+  ];
+
+  const handleProblemInspectionRequest = (problemTitle) => {
+    setSelectedService('');
+    setFormData(prev => ({
+      ...prev,
+      message: `I'm noticing: ${problemTitle}\n\nI would like to request a free crawlspace inspection.`
+    }));
+    setIsQuoteModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -122,8 +165,43 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Problem Selector Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6 text-center">
+            Not Sure What's Causing the Problem?
+          </h2>
+          <p className="text-lg text-gray-700 text-center mb-10">
+            Many crawlspace issues show up as problems inside the home. Select what you're noticing below to learn what may be causing it and how it's typically corrected.
+          </p>
+
+          <Accordion type="single" collapsible className="w-full space-y-3">
+            {problemExplanations.map((problem) => (
+              <AccordionItem
+                key={problem.id}
+                value={problem.id}
+                className="bg-white rounded-lg border border-gray-200 px-4"
+              >
+                <AccordionTrigger className="text-lg font-medium text-gray-900 hover:text-tennessee-orange-600 hover:no-underline py-5">
+                  {problem.title}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-5">
+                  <p className="mb-4">{problem.explanation}</p>
+                  <Button
+                    onClick={() => handleProblemInspectionRequest(problem.title)}
+                    className="bg-tennessee-orange-600 hover:bg-tennessee-orange-700 text-white"
+                  >
+                    Request a Free Crawlspace Inspection
+                  </Button>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-12 text-center">
             Our Services
@@ -164,7 +242,7 @@ const Home = () => {
       </section>
 
       {/* Trust Factors */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Feature Image */}
           <div className="mb-12">
@@ -200,7 +278,7 @@ const Home = () => {
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-tennessee-orange-600 mb-6">
             Proudly Serving the Upstate of South Carolina

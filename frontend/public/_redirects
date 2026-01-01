@@ -1,1 +1,6 @@
+# Case-insensitive and trailing slash redirects for Contact page (SEO/Google Ads compliance)
+/Contact    /contact    301
+/CONTACT    /contact    301
+/contact/   /contact    301
+
 /*    /index.html   200

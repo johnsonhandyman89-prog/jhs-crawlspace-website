@@ -65,9 +65,8 @@ export default async (req, context) => {
     const submissionsStore = getStore("team-submissions");
     await submissionsStore.setJSON(submission.id, submission);
 
-    // Send email notification
-    const emailContent = buildEmailContent(submission);
-    await sendEmailNotification(emailContent, submission.photo);
+    // Submit to Netlify Forms (uses same notification settings as contact form)
+    await submitToNetlifyForms(submission);
 
     return new Response(JSON.stringify({
       success: true,
@@ -86,93 +85,49 @@ export default async (req, context) => {
   }
 };
 
-function buildEmailContent(submission) {
-  return `
-NEW LEAD SUBMISSION
-==================
+async function submitToNetlifyForms(submission) {
+  // Build form data for Netlify Forms submission
+  const formData = new URLSearchParams();
+  formData.append('form-name', 'team-lead');
+  formData.append('submittedBy', `${submission.submittedBy.displayName} (${submission.submittedBy.username})`);
+  formData.append('submittedAt', new Date(submission.submittedAt).toLocaleString());
+  formData.append('homeownerName', submission.homeownerName || '');
+  formData.append('propertyAddress', submission.propertyAddress || '');
+  formData.append('phoneNumber', submission.phoneNumber || '');
+  formData.append('emailAddress', submission.emailAddress || '');
+  formData.append('confirmHomeowner', submission.confirmHomeowner || '');
+  formData.append('confirmCrawlspace', submission.confirmCrawlspace || '');
+  formData.append('bestTimeForInspection', submission.bestTimeForInspection || '');
+  formData.append('interestLevel', submission.interestLevel || '');
+  formData.append('notes', submission.notes || '');
+  formData.append('giftSelected', submission.giftSelected || '');
+  formData.append('photoUrl', submission.photo ? 'Photo attached (stored in submission)' : 'No photo');
 
-Submitted By: ${submission.submittedBy.displayName} (${submission.submittedBy.username})
-Submitted At: ${new Date(submission.submittedAt).toLocaleString()}
-
-LEAD INFORMATION
-----------------
-
-Homeowner Name: ${submission.homeownerName || "N/A"}
-Property Address: ${submission.propertyAddress || "N/A"}
-Phone Number: ${submission.phoneNumber || "N/A"}
-Email Address: ${submission.emailAddress || "N/A"}
-
-QUALIFICATION
--------------
-
-Confirm Homeowner: ${submission.confirmHomeowner || "N/A"}
-Confirm Crawlspace Present: ${submission.confirmCrawlspace || "N/A"}
-Best Time for Inspection: ${submission.bestTimeForInspection || "N/A"}
-Interest Level: ${submission.interestLevel || "N/A"}
-
-ADDITIONAL INFO
----------------
-
-Notes/Concerns: ${submission.notes || "None"}
-Gift Selected: ${submission.giftSelected || "N/A"}
-
-Photo Attached: ${submission.photo ? "Yes - " + submission.photo.name : "No"}
-
----
-Submission ID: ${submission.id}
-`;
-}
-
-async function sendEmailNotification(content, photo) {
-  // Using Netlify's built-in email integration or fetch to an email service
-  // For production, this would integrate with SendGrid, Mailgun, etc.
-  // For now, we'll use a simple approach with the Netlify environment
-
-  const SENDGRID_API_KEY = Netlify.env.get("SENDGRID_API_KEY");
-
-  if (!SENDGRID_API_KEY) {
-    console.log("Email notification (SENDGRID_API_KEY not configured):");
-    console.log(content);
-    return;
-  }
-
-  const emailData = {
-    personalizations: [{
-      to: [{ email: "jhscrawlspace@gmail.com" }]
-    }],
-    from: { email: "noreply@themoisturecrew.com", name: "The Moisture Crew Portal" },
-    subject: "New Lead Submission - The Moisture Crew",
-    content: [{
-      type: "text/plain",
-      value: content
-    }]
-  };
-
-  // Add photo attachment if present
-  if (photo) {
-    emailData.attachments = [{
-      content: photo.data,
-      filename: photo.name,
-      type: photo.type,
-      disposition: "attachment"
-    }];
-  }
+  // Get the site URL from environment or use a default
+  const siteUrl = Netlify.env.get('URL') || 'https://sensational-mandazi-abf05e.netlify.app';
 
   try {
-    const response = await fetch("https://api.sendgrid.com/v3/mail/send", {
-      method: "POST",
+    console.log('Submitting to Netlify Forms...');
+
+    const response = await fetch(siteUrl, {
+      method: 'POST',
       headers: {
-        "Authorization": `Bearer ${SENDGRID_API_KEY}`,
-        "Content-Type": "application/json"
+        'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: JSON.stringify(emailData)
+      body: formData.toString()
     });
 
     if (!response.ok) {
-      console.error("SendGrid error:", await response.text());
+      const errorText = await response.text();
+      console.error('Netlify Forms error:', response.status, errorText);
+      throw new Error(`Netlify Forms error: ${response.status}`);
     }
+
+    console.log('Netlify Forms submission successful');
   } catch (error) {
-    console.error("Email send error:", error);
+    console.error('Form submission error:', error.message);
+    // Don't throw - the lead is already saved to Blobs, just log the notification failure
+    console.log('Lead saved to Blobs but form notification may have failed');
   }
 }
 

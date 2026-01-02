@@ -118,9 +118,17 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © {currentYear} JHS Crawlspace Specialist. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm">
-              Family-owned & operated | Licensed & Insured
-            </p>
+            <div className="flex items-center gap-4">
+              <p className="text-gray-400 text-sm">
+                Family-owned & operated | Licensed & Insured
+              </p>
+              <Link
+                to="/team"
+                className="text-gray-500 hover:text-tennessee-orange-600 transition-colors text-sm"
+              >
+                Team Sign-In
+              </Link>
+            </div>
           </div>
         </div>
       </div>

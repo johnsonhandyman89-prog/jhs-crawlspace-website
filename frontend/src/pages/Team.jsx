@@ -168,6 +168,27 @@ const Team = () => {
       const data = await response.json();
 
       if (data.success) {
+        // Submit to Netlify Forms from browser to trigger email notifications
+        // (Server-side submissions to Netlify Forms don't reliably trigger notifications)
+        if (data.formData) {
+          try {
+            const netlifyFormData = new URLSearchParams();
+            netlifyFormData.append('form-name', 'team-lead');
+            Object.entries(data.formData).forEach(([key, value]) => {
+              netlifyFormData.append(key, value);
+            });
+
+            await fetch('/', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: netlifyFormData.toString()
+            });
+          } catch (formError) {
+            console.error('Netlify Forms notification error:', formError);
+            // Don't fail the submission - data is already saved
+          }
+        }
+
         toast.success('Lead submitted successfully!');
         // Reset form
         setLeadForm({

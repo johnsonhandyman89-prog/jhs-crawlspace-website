@@ -65,12 +65,27 @@ export default async (req, context) => {
     const submissionsStore = getStore("team-submissions");
     await submissionsStore.setJSON(submission.id, submission);
 
-    // Submit to Netlify Forms (uses same notification settings as contact form)
-    await submitToNetlifyForms(submission);
-
+    // Return submission data so frontend can submit to Netlify Forms
+    // (Netlify Forms notifications work reliably only from browser submissions)
     return new Response(JSON.stringify({
       success: true,
-      submissionId: submission.id
+      submissionId: submission.id,
+      // Return sanitized data for Netlify Forms submission from frontend
+      formData: {
+        submittedBy: `${submission.submittedBy.displayName} (${submission.submittedBy.username})`,
+        submittedAt: new Date(submission.submittedAt).toLocaleString(),
+        homeownerName: submission.homeownerName || '',
+        propertyAddress: submission.propertyAddress || '',
+        phoneNumber: submission.phoneNumber || '',
+        emailAddress: submission.emailAddress || '',
+        confirmHomeowner: submission.confirmHomeowner || '',
+        confirmCrawlspace: submission.confirmCrawlspace || '',
+        bestTimeForInspection: submission.bestTimeForInspection || '',
+        interestLevel: submission.interestLevel || '',
+        notes: submission.notes || '',
+        giftSelected: submission.giftSelected || '',
+        photoUrl: submission.photo ? 'Photo attached (stored in submission)' : 'No photo'
+      }
     }), {
       status: 200,
       headers: { "Content-Type": "application/json" }
@@ -84,52 +99,6 @@ export default async (req, context) => {
     });
   }
 };
-
-async function submitToNetlifyForms(submission) {
-  // Build form data for Netlify Forms submission
-  const formData = new URLSearchParams();
-  formData.append('form-name', 'team-lead');
-  formData.append('submittedBy', `${submission.submittedBy.displayName} (${submission.submittedBy.username})`);
-  formData.append('submittedAt', new Date(submission.submittedAt).toLocaleString());
-  formData.append('homeownerName', submission.homeownerName || '');
-  formData.append('propertyAddress', submission.propertyAddress || '');
-  formData.append('phoneNumber', submission.phoneNumber || '');
-  formData.append('emailAddress', submission.emailAddress || '');
-  formData.append('confirmHomeowner', submission.confirmHomeowner || '');
-  formData.append('confirmCrawlspace', submission.confirmCrawlspace || '');
-  formData.append('bestTimeForInspection', submission.bestTimeForInspection || '');
-  formData.append('interestLevel', submission.interestLevel || '');
-  formData.append('notes', submission.notes || '');
-  formData.append('giftSelected', submission.giftSelected || '');
-  formData.append('photoUrl', submission.photo ? 'Photo attached (stored in submission)' : 'No photo');
-
-  // Get the site URL from environment or use a default
-  const siteUrl = Netlify.env.get('URL') || 'https://sensational-mandazi-abf05e.netlify.app';
-
-  try {
-    console.log('Submitting to Netlify Forms...');
-
-    const response = await fetch(siteUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: formData.toString()
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('Netlify Forms error:', response.status, errorText);
-      throw new Error(`Netlify Forms error: ${response.status}`);
-    }
-
-    console.log('Netlify Forms submission successful');
-  } catch (error) {
-    console.error('Form submission error:', error.message);
-    // Don't throw - the lead is already saved to Blobs, just log the notification failure
-    console.log('Lead saved to Blobs but form notification may have failed');
-  }
-}
 
 export const config = {
   path: "/api/submit-lead"

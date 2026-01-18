@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, CheckCircle, Shield, Award, Users } from 'lucide-react';
 import headerHomeImage from '../assets/images/header-home.png';
+import bestWaterproofingAward from '../assets/images/best-waterproofing-2025-award.png';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../components/ui/dialog';
@@ -271,6 +272,19 @@ const Home = () => {
               );
             })}
           </div>
+
+          {/* Award Recognition */}
+          <div className="mt-12 flex flex-col items-center">
+            <img
+              src={bestWaterproofingAward}
+              alt="Best Waterproofing Service in Spartanburg 2025 - BusinessRate Award"
+              className="rounded-lg shadow-lg max-w-xs"
+            />
+            <p className="text-gray-600 mt-4 text-sm text-center max-w-md">
+              Recognized as the Best Waterproofing Service in Spartanburg for 2025, based on verified Google reviews independently analyzed by BusinessRate.
+            </p>
+          </div>
+
           <p className="text-lg text-gray-700 text-center mt-12 font-medium">
             Solutions that make sense <span className="text-tennessee-orange-600 font-semibold">for your home</span>
           </p>

@@ -5,6 +5,13 @@
   publish = "build"
   command = "npm run build"
 
+# Disable pretty_urls to prevent trailing slash redirects that conflict with SPA routing
+# This is critical for SPAs where all routes serve index.html via the /* fallback
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = false
+
 # Headers for better performance and security
 [[headers]]
   for = "/*"
@@ -26,12 +33,6 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/contact/"
-  to = "/contact"
-  status = 301
-  force = true
-
 # Case-insensitive redirects for Team page
 [[redirects]]
   from = "/Team"
@@ -41,12 +42,6 @@
 
 [[redirects]]
   from = "/TEAM"
-  to = "/team"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/team/"
   to = "/team"
   status = 301
   force = true

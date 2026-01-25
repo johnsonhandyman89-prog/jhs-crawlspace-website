@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import ServiceAreas from "./pages/ServiceAreas";
 import WhyTrustUs from "./pages/WhyTrustUs";
 import Team from "./pages/Team";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { Toaster } from "./components/ui/sonner";
 
 // Layout wrapper to conditionally render header/footer
@@ -45,6 +46,7 @@ function App() {
             <Route path="/why-trust-us" element={<WhyTrustUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </Layout>
       </BrowserRouter>

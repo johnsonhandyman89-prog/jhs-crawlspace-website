@@ -1,11 +1,16 @@
+# Redirects are also defined in netlify.toml for reliability
+# This file serves as a backup and reference
+
 # Case-insensitive and trailing slash redirects for Contact page (SEO/Google Ads compliance)
-/Contact    /contact    301
-/CONTACT    /contact    301
-/contact/   /contact    301
+/Contact    /contact    301!
+/CONTACT    /contact    301!
+/contact/   /contact    301!
 
 # Case-insensitive redirects for Team page
-/Team       /team       301
-/TEAM       /team       301
-/team/      /team       301
+/Team       /team       301!
+/TEAM       /team       301!
+/team/      /team       301!
 
+# SPA Fallback - serves index.html for all client-side routes
+# This allows React Router to handle routing on the client side
 /*    /index.html   200

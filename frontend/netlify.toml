@@ -1,0 +1,59 @@
+# Netlify configuration for JHS Crawlspace Specialist website
+# This ensures proper SPA routing for all routes
+
+[build]
+  publish = "build"
+  command = "npm run build"
+
+# Headers for better performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Case-insensitive redirects for Contact page
+[[redirects]]
+  from = "/Contact"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/CONTACT"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact"
+  status = 301
+  force = true
+
+# Case-insensitive redirects for Team page
+[[redirects]]
+  from = "/Team"
+  to = "/team"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/TEAM"
+  to = "/team"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/team/"
+  to = "/team"
+  status = 301
+  force = true
+
+# SPA Fallback - MUST be last
+# This ensures all client-side routes are served by index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

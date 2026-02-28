@@ -53,7 +53,6 @@ export default async (req, context) => {
       bestTimeForInspection: formData.get("bestTimeForInspection"),
       interestLevel: formData.get("interestLevel"),
       notes: formData.get("notes"),
-      giftSelected: formData.get("giftSelected"),
       photo: photoData ? {
         name: photoName,
         type: photoType,
@@ -83,7 +82,6 @@ export default async (req, context) => {
         bestTimeForInspection: submission.bestTimeForInspection || '',
         interestLevel: submission.interestLevel || '',
         notes: submission.notes || '',
-        giftSelected: submission.giftSelected || '',
         photoUrl: submission.photo ? 'Photo attached (stored in submission)' : 'No photo'
       }
     }), {

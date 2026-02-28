@@ -31,8 +31,7 @@ const Team = () => {
     confirmCrawlspace: '',
     bestTimeForInspection: '',
     interestLevel: '',
-    notes: '',
-    giftSelected: ''
+    notes: ''
   });
   const [photoFile, setPhotoFile] = useState(null);
   const [photoPreview, setPhotoPreview] = useState(null);
@@ -157,7 +156,6 @@ const Team = () => {
       formData.append('bestTimeForInspection', leadForm.bestTimeForInspection);
       formData.append('interestLevel', leadForm.interestLevel);
       formData.append('notes', leadForm.notes);
-      formData.append('giftSelected', leadForm.giftSelected);
       formData.append('photo', photoFile);
 
       const response = await fetch('/api/submit-lead', {
@@ -200,8 +198,7 @@ const Team = () => {
           confirmCrawlspace: '',
           bestTimeForInspection: '',
           interestLevel: '',
-          notes: '',
-          giftSelected: ''
+          notes: ''
         });
         setPhotoFile(null);
         setPhotoPreview(null);
@@ -480,25 +477,6 @@ const Team = () => {
                       rows={3}
                       className="bg-white"
                     />
-                  </div>
-
-                  {/* Gift Selected */}
-                  <div className="space-y-2">
-                    <Label>Gift Selected *</Label>
-                    <Select
-                      value={leadForm.giftSelected}
-                      onValueChange={(value) => setLeadForm({ ...leadForm, giftSelected: value })}
-                      required
-                    >
-                      <SelectTrigger className="bg-white">
-                        <SelectValue placeholder="Select..." />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Gain">Gain</SelectItem>
-                        <SelectItem value="Tide">Tide</SelectItem>
-                        <SelectItem value="Arm & Hammer">Arm & Hammer</SelectItem>
-                      </SelectContent>
-                    </Select>
                   </div>
 
                   {/* Photo Upload */}

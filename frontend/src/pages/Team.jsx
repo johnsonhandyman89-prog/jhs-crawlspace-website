@@ -172,6 +172,7 @@ const Team = () => {
           try {
             const netlifyFormData = new URLSearchParams();
             netlifyFormData.append('form-name', 'team-lead');
+            netlifyFormData.append('bot-field', '');
             Object.entries(data.formData).forEach(([key, value]) => {
               netlifyFormData.append(key, value);
             });

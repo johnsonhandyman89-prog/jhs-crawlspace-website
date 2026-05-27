@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://sensational-mandazi-abf05e.netlify.app/sitemap.xml
+Sitemap: https://jhscrawlspacespecialist.com/sitemap.xml
